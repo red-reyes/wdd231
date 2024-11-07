@@ -9,7 +9,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
     line-height: 1.5;
@@ -69,6 +68,11 @@ header {
     text-decoration: none;
     letter-spacing:1pt;
     padding: 1.5rem;
+}
+.menu-links a.active {
+    font-weight: bold;
+    color:burlywood;
+    text-decoration: underline;
 }
 
 .upper {
@@ -130,6 +134,9 @@ header {
 #image {
     padding: 1rem;
 }
+#image p {
+    text-align: center;
+}
 #image img {
     max-width: 100%;
 }
@@ -174,26 +181,9 @@ header {
     justify-content: center;
     align-items: center;
 }
-.coursesbuttons a:nth-child(4){
-    background-color: rgb(222, 222, 222);
-    border-color: rgba(0, 0, 0, 0.8);
-    border: 1px solid rgb(112, 98, 78);
-    color:rgba(35, 35, 35, 0.8);
-}
-.coursesbuttons a:nth-child(4):hover
-{
-    background-color: rgb(65, 65, 65);
-    color: antiquewhite;
-}
-.coursesbuttons a:nth-child(6){
-    background-color: rgb(222, 222, 222);
-    border-color: rgba(0, 0, 0, 0.8);
-    border: 1px solid rgb(66, 66, 66);
-    color:rgba(35, 35, 35, 0.8);
-}
-.coursesbuttons a:nth-child(6):hover{
-    background-color: rgb(65, 65, 65);
-    color: antiquewhite;
+.button-cert.completed {
+    background-color: #7487ac;
+    font-weight: bold;
 }
 
 .button-cert:hover{
