@@ -29,6 +29,37 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderMembers(true);
 });
 
+document.addEventListener('DOMContentLoaded', async () => {
+    const directory = document.getElementById('directory');
+    const toggleView = document.getElementById('toggle-view');
+    
+    // Fetch JSON data
+    const response = await fetch('data/members.json');
+    const members = await response.json();
+
+    // Function to render members
+    const renderMembers = (isGrid) => {
+        directory.innerHTML = members.map(member => `
+            <div class="${isGrid ? 'member-card' : 'member-list'}">
+                <img src="images/${member.image}" alt="${member.name}" />
+                <h3>${member.name}</h3>
+                <p>${member.address}</p>
+                <p>${member.phone}</p>
+                <a href="${member.website}" target="_blank">Visit Website</a>
+            </div>
+        `).join('');
+    };
+
+    // Render members in grid view initially
+    renderMembers(true);
+
+    // Toggle view between grid and list
+    toggleView.addEventListener('click', () => {
+        const isGrid = directory.classList.toggle('grid-view');
+        renderMembers(isGrid);
+    });
+});
+
 //footer
 //current year
 //date

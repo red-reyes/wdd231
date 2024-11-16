@@ -53,6 +53,14 @@ header{
     color:burlywood;
     text-decoration: underline;
 }
+
+#toggle-view{
+    max-width: 100%;
+    background-color: transparent;
+    border: none;
+    margin:0;
+    padding:0;
+}
 .site-identity {
     display: flex;
     align-items: center;
@@ -170,6 +178,7 @@ header{
     border-radius: 5px;
     background-color: #e2f0f4;
 }
+/* switch view */
 
 footer {
     display: flex;
