@@ -1,0 +1,26 @@
+[
+    {
+        "name":"Timbuktu Bank",
+        "address":"123 Middle Street, Timbuktu",
+        "phone":"000-123-4567",
+        "website":"https://www.google.com/",
+        "image":"name.jpg",
+        "membership":3
+    },
+    {
+        "name":"Timbuktu Bookstore",
+        "address":"456 Right Street, Timbuktu",
+        "phone":"000-891-2345",
+        "website":"https://www.google.com/",
+        "image":"name.jpg",
+        "membership":2
+    },
+    {
+        "name":"Timbuktu Resort",
+        "address":"789 Left Street, Timbuktu",
+        "phone":"000-678-9123",
+        "website":"https://www.google.com/",
+        "image":"name.jpg",
+        "membership":4        
+    }
+]
