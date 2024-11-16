@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderMembers(true);
 });
 
+//toggle view
 document.addEventListener('DOMContentLoaded', async () => {
     const directory = document.getElementById('directory');
     const toggleView = document.getElementById('toggle-view');
