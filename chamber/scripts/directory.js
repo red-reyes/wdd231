@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     const response = await fetch('data/members.json');
     const members = await response.json();
 
+    let isGrid = true;
+
     // render members
     const renderMembers = (members, isGrid) => {
         directory.innerHTML = members.map(member => `
@@ -37,12 +39,12 @@ document.addEventListener('DOMContentLoaded', async () => {
             case "1": return "Member";
             case "2": return "Silver";
             case "3": return "Gold";
-            default: return "Unknown";
+            default: return "--";
         }
     };
 
     // Initially render all members in grid view
-    renderMembers(members, true);
+    renderMembers(members, isGrid);
 
     // Filter members by membership level
     const filterMembers = (level) => {
@@ -52,7 +54,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         } else {
             filteredMembers = members.filter(member => member.membership === level);
         }
-        renderMembers(filteredMembers, true); // Render the filtered members in grid view
+        renderMembers(filteredMembers, isGrid); 
     };
 
     // Event listeners for filter buttons
@@ -63,7 +65,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Toggle view functionality
     toggleView.addEventListener('click', () => {
-        const isGrid = directory.classList.toggle('grid-view');
+        isGrid = !isGrid;
         renderMembers(members, isGrid);
     });
 });
