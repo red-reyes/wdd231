@@ -3,24 +3,70 @@
         "name":"Timbuktu Bank",
         "address":"123 Middle Street, Timbuktu",
         "phone":"000-123-4567",
+        "email": "timbuktubank@email.com",
         "website":"https://www.google.com/",
         "image":"name.jpg",
-        "membership":3
+        "membership": "1",
+        "officehours": "8:00am - 5:00pm (Closed on Sundays)"
     },
     {
         "name":"Timbuktu Bookstore",
         "address":"456 Right Street, Timbuktu",
         "phone":"000-891-2345",
+        "email": "timbuktubookstore@email.com",
         "website":"https://www.google.com/",
         "image":"name.jpg",
-        "membership":2
+        "membership": "2",
+        "officehours": "10:00am - 6:00pm (Closed on Sundays)"
     },
     {
         "name":"Timbuktu Resort",
         "address":"789 Left Street, Timbuktu",
         "phone":"000-678-9123",
+        "email": "timbukturesort@email.com",
         "website":"https://www.google.com/",
         "image":"name.jpg",
-        "membership":4        
+        "membership":"3",
+        "officehours": "24/7"
+    },
+    {
+        "name":"Timbuktu International Airlines",
+        "address":"321 Back Street, Timbuktu",
+        "phone":"000-456-7890",
+        "email": "timbuktuairlinest@email.com",
+        "website":"https://www.google.com/",
+        "image":"name.jpg",
+        "membership":"1",
+        "officehours": "24/7"
+    },
+    {
+        "name":"Timbuktu Private Transportation",
+        "address":"789 Front Street, Timbuktu",
+        "phone":"000-457-1233",
+        "email": "timbuktuprivatetransportation@email.com",
+        "website":"https://www.google.com/",
+        "image":"name.jpg",
+        "membership":"2",
+        "officehours": "24/7"
+    },
+    {
+        "name":"Timbuktu Travel and Tour",
+        "address":"123 Main Street",
+        "phone":"000-349-2849",
+        "email": "timbuktutravels@email.com",
+        "website":"https://www.google.com/",
+        "image":"name.jpg",
+        "membership":"2",
+        "officehours": "7:00am - 6:00pm"
+    },
+    {
+        "name":"Timbuktu Express Delivery",
+        "address":"789 Secret Street, Timbuktu",
+        "phone":"000-345-9876",
+        "email": "timbuktupexpress@email.com",
+        "website":"https://www.google.com/",
+        "image":"name.jpg",
+        "membership":"3",
+        "officehours": "24/7"
     }
 ]

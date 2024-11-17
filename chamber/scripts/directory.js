@@ -22,7 +22,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <h3>${member.name}</h3>
                 <p>${member.address}</p>
                 <p>${member.phone}</p>
+                <p>${member.email}</p>
                 <a href="${member.website}" target="_blank">Visit Website</a>
+                <p>${member.membership}</p>
+                <p>${member.officehours}</p>
             </div>
         `).join('');
     };
@@ -46,7 +49,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <h3>${member.name}</h3>
                 <p>${member.address}</p>
                 <p>${member.phone}</p>
+                <p>${member.email}</p>
                 <a href="${member.website}" target="_blank">Visit Website</a>
+                <p>${member.membership}</p>
+                <p>${member.officehours}</p>
             </div>
         `).join('');
     };
