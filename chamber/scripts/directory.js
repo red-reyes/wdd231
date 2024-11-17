@@ -1,11 +1,12 @@
-//toggle menu
+// Toggle menu/mobile view
 const menuToggle = document.querySelector('.menu-toggle');
 const menuLinks = document.querySelector('.menu-links');
 
-menuToggle.addEventListener('click',() => {
+menuToggle.addEventListener('click', () => {
     menuLinks.classList.toggle('show');
 });
 
+// Fetch members data and render them
 document.addEventListener('DOMContentLoaded', async () => {
     const directory = document.getElementById('directory');
     const toggleView = document.getElementById('toggle-view');
@@ -14,8 +15,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     const response = await fetch('data/members.json');
     const members = await response.json();
 
-    // Render members
-    const renderMembers = (isGrid) => {
+    // render members
+    const renderMembers = (members, isGrid) => {
         directory.innerHTML = members.map(member => `
             <div class="${isGrid ? 'member-card' : 'member-list'}">
                 <img src="images/${member.image}" alt="${member.name}" />
@@ -24,46 +25,46 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <p>${member.phone}</p>
                 <p>${member.email}</p>
                 <a href="${member.website}" target="_blank">Visit Website</a>
-                <p>${member.membership}</p>
-                <p>${member.officehours}</p>
-            </div>
-        `).join('');
-    };
-    renderMembers(true);
-});
-
-//toggle view
-document.addEventListener('DOMContentLoaded', async () => {
-    const directory = document.getElementById('directory');
-    const toggleView = document.getElementById('toggle-view');
-    
-    // Fetch JSON data
-    const response = await fetch('data/members.json');
-    const members = await response.json();
-
-    // Function to render members
-    const renderMembers = (isGrid) => {
-        directory.innerHTML = members.map(member => `
-            <div class="${isGrid ? 'member-card' : 'member-list'}">
-                <img src="images/${member.image}" alt="${member.name}" />
-                <h3>${member.name}</h3>
-                <p>${member.address}</p>
-                <p>${member.phone}</p>
-                <p>${member.email}</p>
-                <a href="${member.website}" target="_blank">Visit Website</a>
-                <p>${member.membership}</p>
-                <p>${member.officehours}</p>
+                <p>Membership: ${getMembershipName(member.membership)}</p>
+                <p>Office Hours: ${member.officehours}</p>
             </div>
         `).join('');
     };
 
-    // Render members in grid view initially
-    renderMembers(true);
+    // Function to get membership name
+    const getMembershipName = (membership) => {
+        switch (membership) {
+            case "1": return "Member";
+            case "2": return "Silver";
+            case "3": return "Gold";
+            default: return "Unknown";
+        }
+    };
 
-    // Toggle view between grid and list
+    // Initially render all members in grid view
+    renderMembers(members, true);
+
+    // Filter members by membership level
+    const filterMembers = (level) => {
+        let filteredMembers;
+        if (level === "all") {
+            filteredMembers = members;
+        } else {
+            filteredMembers = members.filter(member => member.membership === level);
+        }
+        renderMembers(filteredMembers, true); // Render the filtered members in grid view
+    };
+
+    // Event listeners for filter buttons
+    document.getElementById("all-btn").addEventListener("click", () => filterMembers("all"));
+    document.getElementById("member-btn").addEventListener("click", () => filterMembers("1"));
+    document.getElementById("silver-btn").addEventListener("click", () => filterMembers("2"));
+    document.getElementById("gold-btn").addEventListener("click", () => filterMembers("3"));
+
+    // Toggle view functionality
     toggleView.addEventListener('click', () => {
         const isGrid = directory.classList.toggle('grid-view');
-        renderMembers(isGrid);
+        renderMembers(members, isGrid);
     });
 });
 
