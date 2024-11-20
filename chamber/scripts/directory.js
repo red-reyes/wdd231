@@ -22,7 +22,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     const renderMembers = (members, isGrid) => {
         directory.innerHTML = members.map(member => `
             <div class="${isGrid ? 'member-card' : 'member-list'}">
-                <img src="images/${member.image}" alt="${member.name}" />
+                <img src="images/${member.image}" alt="${member.name}"/>
+                <br>
                 <h3>${member.name}</h3>
                 <p>${member.address}</p>
                 <p>${member.phone}</p>
