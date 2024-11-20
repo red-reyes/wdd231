@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         } else {
             filteredMembers = members.filter(member => member.membership === level);
         }
-        renderMembers(filteredMembers, isGrid); 
+        renderMembers(filteredMembers, isGrid);
     };
 
     // Event listeners for filter buttons
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 //footer
 //current year
 //date
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("currentyear").textContent = new Date().getFullYear();
 

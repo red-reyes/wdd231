@@ -106,13 +106,13 @@ header{
 
 .btn {
     padding: 10px 20px;
-    background-color: #2458c9;
-    color: white;
+    background-color: #bbd1ff;
+    color: black;
     text-decoration: none;
     border-radius: 8px;
 }
 .btn:hover {
-    background-color: #917937;
+    background-color: #ffffff;
 }
 .page-title{
     padding: 20px;
@@ -176,7 +176,7 @@ header{
     column-gap: 5px;
 }
 #all-btn, #member-btn, #silver-btn, #gold-btn{
-    background-color:#713e2d;
+    background-color:#2d5272;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -184,8 +184,8 @@ header{
 }
 #all-btn:hover, #member-btn:hover, #silver-btn:hover, #gold-btn:hover{
     background-color:#ffffff;
-    color:#713e2d;
-    border: 1px solid #713e2d;
+    color:#2d5272;
+    border: 1px solid #2d5272;
 }
 #directory {
     display: grid;
@@ -212,14 +212,15 @@ header{
 }
 
 .member-card {
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 5px;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center; 
-    background-color: #e2f0f4;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
 }
 
 .member-card img {
@@ -347,15 +348,10 @@ footer {
     
     .btn {
         padding: 10px 20px;
-        background-color: #9daccd;
-        color: black;
         text-decoration: none;
         font-weight:bold;
         letter-spacing: 1pt;
         border-radius: 8px;
-    }
-    .btn:hover {
-        background-color: #ffffff;
     }
     .page-title{
         text-align: center;
@@ -401,26 +397,17 @@ footer {
         max-width: 100%;
     }
     
-    .member-card {
-        border: 1px solid #ccc;
-        padding: 20px;
-        border-radius: 5px;
-    }
     
     footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: rgb(47, 64, 96);
         padding: 20px;
         row-gap: 10px;
         margin: 0;
     }
     footer p{
-        font-size: 6pt;
-        color:antiquewhite;
-        text-align: center;
-        letter-spacing: 1pt;
+        font-size: 9pt;
     }
 }
