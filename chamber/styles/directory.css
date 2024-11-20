@@ -42,15 +42,19 @@ header{
     padding: 0;
     gap: 10px;
 }
+.menunav .menu-links a:hover {
+    color:#6a540d;
+    text-decoration: underline;
+}
 .menu-links a{
-    color:rgb(87, 99, 116);
+    color:#392867;
     text-decoration: none;
     letter-spacing:1pt;
     padding: 1.5rem;
 }
 .menu-links a.active {
     font-weight: bold;
-    color:burlywood;
+    color:#542a03;
     text-decoration: underline;
 }
 
@@ -125,7 +129,7 @@ header{
     height: auto;
 }
 .event-title, .weather-title, .forecast-title{
-    background-color: #7483a4;
+    background-color:  #213c54;
     padding: 5px;
 }
 .events h4 {
@@ -171,14 +175,17 @@ header{
     grid-template-columns: repeat(4, 1fr);
     column-gap: 5px;
 }
-#all-btn:hover, #member-btn:hover, #silver-btn:hover, #gold-btn:hover{
-    background-color:#bb9f62;
-}
 #all-btn, #member-btn, #silver-btn, #gold-btn{
-    background-color:#e9d19f;
+    background-color:#713e2d;
     padding: 10px;
-    border: 1px solid #bb9f62;
+    border: none;
     border-radius: 5px;
+    color:white;
+}
+#all-btn:hover, #member-btn:hover, #silver-btn:hover, #gold-btn:hover{
+    background-color:#ffffff;
+    color:#713e2d;
+    border: 1px solid #713e2d;
 }
 #directory {
     display: grid;
@@ -233,7 +240,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(47, 64, 96);
+    background-color:#213c54;
     padding: 20px;
     color:antiquewhite;
     row-gap: 10px;
@@ -298,10 +305,7 @@ footer {
         color: #333;
         text-decoration: none;
     }
-    .menunav .menu-links a:hover {
-        text-decoration: underline;
-        color: rgb(164, 139, 80);
-    }
+
     .site-identity {
         display: flex;
         align-items: center;
@@ -343,13 +347,15 @@ footer {
     
     .btn {
         padding: 10px 20px;
-        background-color: #2458c9;
-        color: white;
+        background-color: #9daccd;
+        color: black;
         text-decoration: none;
+        font-weight:bold;
+        letter-spacing: 1pt;
         border-radius: 8px;
     }
     .btn:hover {
-        background-color: #917937;
+        background-color: #ffffff;
     }
     .page-title{
         text-align: center;
@@ -408,11 +414,13 @@ footer {
         align-items: center;
         background-color: rgb(47, 64, 96);
         padding: 20px;
-        color:antiquewhite;
         row-gap: 10px;
         margin: 0;
+    }
+    footer p{
+        font-size: 6pt;
+        color:antiquewhite;
         text-align: center;
-        font-size: 9pt;
         letter-spacing: 1pt;
     }
 }

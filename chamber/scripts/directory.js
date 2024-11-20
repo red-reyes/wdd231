@@ -6,6 +6,7 @@ menuToggle.addEventListener('click', () => {
     menuLinks.classList.toggle('show');
 });
 
+
 // Fetch members data and render them
 document.addEventListener('DOMContentLoaded', async () => {
     const directory = document.getElementById('directory');
