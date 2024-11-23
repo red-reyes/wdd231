@@ -393,7 +393,7 @@ footer p{
         text-align: center;
     }
     .copyright{
-        padding-right: 40px;
+        padding-right: 0;
     }
     .social-icons img{
         padding: 10px;
