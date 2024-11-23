@@ -6,8 +6,9 @@
     <meta name="description" content="Directory of local businesses in Timbuktu.">
     <meta name="author" content="Rhea June Reyes">
     <title>Timbuktu Chamber of Commerce</title>
-    <link rel="stylesheet" href = "styles/directory.css">
-    <link rel="icon" href="favicon-man.ico">
+    <link rel="stylesheet" href = "styles/index.css">
+    <link rel="stylesheet" href = "styles/weather.css">
+        <link rel="icon" href="favicon-man.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -19,7 +20,7 @@
     <!-- add description -->
     <meta property="og:description" content="The site will provide information on local events, host networking opportunities, create business directories, and encourage local shopping. It aims to promote local economic growth, support local businesses, and foster a sense of community between the businesses.">
     <meta property="og:site_name" content="Timbuktu Chamber of Commerce">
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/index.js" defer></script>
 </head>
 <body>
     <header>
@@ -40,22 +41,28 @@
             </ul>
         </nav>
     </header>
+<body>
+    <header>
+        <h1>OpenWeatherMap.org API Test</h1>
+    </header>
     <main>
-        <div class="views">
-            <button id="gridview"><img src="images/gridview.svg"></button>
-            <button id="listview"><img src="images/listview.svg"></button>    
-        </div>
-        <div class="buttons">
-            <button id="all-btn">All</button>
-            <button id="member-btn">Member</button>
-            <button id="silver-btn">Silver</button>
-            <button id="gold-btn">Gold</button>
-        </div>
-        <section id ="directory"></section>
+    <p>The current temperature in Phnom Penh is:
+    <span id="current-temp"></span></p>
+    <figure>
+        <img id="weather-icon" src="" alt="Weather Icon">
+        <figcaption></figcaption>
+    </figure>
     </main>
-    <footer>
-        <p>&copy;<span id="currentyear"></span> Timbuktu Chamber of Commerce</p>
-        <p id="datetimemodified"></p>
-    </footer>
+    <div class="card">
+        <h2 id="town"><h2>
+        <img id="graphic" src="" alt="">
+        <p id="description"></p>
+        <p id="temperature"></p>
+    </div>
+<footer>
+    <p>&copy;<span id="currentyear"></span> Timbuktu Chamber of Commerce</p>
+    <p id="datetimemodified"></p>
+</footer>
+    <script src="scripts/weather.js" defer></script>
 </body>
 </html>

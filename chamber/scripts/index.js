@@ -82,6 +82,39 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 });
 
+
+//WEATHER TEMPLATE
+// embed template
+const contentDiv = document.querySelector('#weather-content');
+
+// Path to the external HTML template
+const externalTemplatePath = 'chamber\scripts\weather.js';
+
+// Fetch the external HTML file and insert its content
+fetch(externalTemplatePath)
+  .then(response => {
+    if (response.ok) {
+      return response.text(); // Read the response as text
+    } else {
+      throw new Error('Failed to load external HTML');
+    }
+  })
+  .then(html => {
+    // Create a temporary DOM element to parse the fetched HTML
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = html;
+
+    // Extract the <body> content from the external HTML
+    const externalBody = tempDiv.querySelector('body').innerHTML;
+
+    // Insert the external content into the target <div>
+    contentDiv.innerHTML = externalBody;
+  })
+  .catch(error => {
+    console.error('Error loading external HTML:', error);
+    contentDiv.innerHTML = '<p>Failed to load content. Please try again later.</p>';
+  });
+
 //footer
 //current year
 //date

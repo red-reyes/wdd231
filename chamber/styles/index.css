@@ -1,7 +1,7 @@
 :root {
     --primary-color: #213c54;
     --secondary-color: #fff24a;
-    --background-color: #f5f5f5;
+    --background-color: #e9e9e9;
 }
 * {
     margin: 0;
@@ -92,7 +92,99 @@ header h1{
     font-size: 25pt;
     text-align: center;
 }
-
+.hero {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-image: url('https://images.unsplash.com/photo-1630013979457-825b990c9cab?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+.hero h2{
+    font-size:large;
+}
+.btn {
+    padding: 10px 20px;
+    background-color: #bbd1ff;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.btn:hover {
+    background-color: #ffffff;
+}
+#page-title{
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+#mission {
+    padding: 20px;
+    color: var(--primary-color);
+    font-size: larger;
+}
+#mission-statement{
+    padding: 20px;
+}
+.events {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color:var(--primary-color);
+    justify-content: center;
+    height: auto;
+}
+.event-title, .weather-title, .forecast-title{
+    background-color:var(--primary-color);
+    padding: 5px;
+}
+.events h4 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.event-space {
+    flex: 0 0 35%;
+}
+.weather-space, .forecast-space{
+    flex: 0 0 30%;
+}
+.event-space, .weather-space, .forecast-space {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.event-content, #weather-content, .forecast-content {
+    padding: 10px;
+}
+#weather-content{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+#weather-content img{
+    width: 25%;
+    order: -1;
+    margin-bottom: 150px;
+}
+.weather-space ul, .forecast-space ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.weather-space li, .forecast-space li {
+    margin: 5px 0;
+}
 .buttons {
     padding: 0 20px;
     display: grid;
