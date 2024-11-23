@@ -191,18 +191,26 @@ header h1{
 
 
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 35% 30% 35%; 
+    justify-items: center;
     align-items: center;
-    background-color:#213c54;
-    padding: 20px;
-    color:antiquewhite;
-    row-gap: 10px;
+    background-color: #213c54;
+    padding: 40px;
+    color: antiquewhite;
     margin: 0;
-    text-align: center;
+    text-align: left;
     font-size: 9pt;
-    letter-spacing: 1pt;
+    font-weight:100 ;
+}
+footer p{
+    font-size: small;
+}
+.copyright{
+    padding-right: 30px;
+}
+.social-icons img{
+    padding: 10px;
 }
 
 @media (max-width: 768px) {
@@ -378,13 +386,16 @@ footer {
     footer {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        row-gap: 10px;
+        column-gap: 20px;
+        justify-items: center; 
+        padding: 40px;
         margin: 0;
+        text-align: center;
     }
-    footer p{
-        font-size: 9pt;
+    .copyright{
+        padding-right: 40px;
+    }
+    .social-icons img{
+        padding: 10px;
     }
 }
