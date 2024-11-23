@@ -438,43 +438,42 @@ footer p{
     .weather-space li, .forecast-space li {
         margin: 5px 0;
     }
-    /* Grid view styling */
-    .member-card {
-       align-items: center;
-        max-width: 100%;
-        margin: 0 auto;
-    }
-
-    /* List view styling */
-    .member-list {
-        display: flex;
-        flex-direction: column;
+       /* Grid view styling */
+       .member-card {
         align-items: center;
-        font-size: small;
-        margin: 0;
-        width: 100%;
-        padding: 20px;
-        font-size: small;
-    }
-
-    .member-list img {
-        width: 50px;
-        height: auto;
-        margin-right: 0;
-    }
-
-    #directory.member-list-view {
-        display: block;
-    }
-
-    #directory {
-        display: flex;
-        flex-direction: column;
-        padding: 20px; 
-        max-width: 100%;
-    }
-    
-    
+         max-width: 100%;
+         margin: 0 auto;
+     }
+ 
+     /* List view styling */
+     .member-list {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         font-size: small;
+         margin: 0;
+         width: 100%;
+         padding: 20px 0;
+         font-size: small;
+     }
+ 
+     .member-list img {
+         width: 50px;
+         height: auto;
+         margin-right: 0;
+     }
+ 
+     #directory.member-list-view {
+         display: block;
+     }
+ 
+     #directory {
+         display: flex;
+         flex-direction: column;
+         padding: 20px; 
+         max-width: 100%;
+     }
+      
     footer {
         display: flex;
         flex-direction: column;
