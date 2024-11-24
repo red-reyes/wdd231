@@ -460,6 +460,14 @@ footer p{
         flex-direction: column;
         height: auto;
     }
+    .event-content img{
+        width: 50%;
+    }
+    .event-content button:hover{
+        background-color: var(--secondary-color);
+        border: 1pt solid var(--secondary-color);
+    
+    }
     .weather-content{
         display: flex;
         flex-direction: row;
