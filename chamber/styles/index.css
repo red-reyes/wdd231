@@ -192,6 +192,7 @@ header h1{
 }
 .weather-space li, .forecast-space li {
     margin: 5px 0;
+    text-align: center;
 }
 .buttons {
     padding: 0 20px;
