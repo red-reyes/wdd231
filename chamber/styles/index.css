@@ -166,11 +166,7 @@ header h1{
 .event-content, #weather-content, .forecast-content {
     padding: 10px;
 }
-#weather-content{
-    display: flex;
-    flex-direction: row;
-    column-gap: 10px;
-}
+/* current weather content */
 .card {
     justify-content: center;
     align-items: center; 
@@ -179,7 +175,7 @@ header h1{
     text-align: center;
     max-width: 100%;
 }
-#town{
+#town, .card p{
     color: var(--primary-color);
     font-size: larger;
     font-weight: 700;

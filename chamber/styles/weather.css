@@ -96,15 +96,15 @@ main{
     align-items: center; 
     padding: 20px; 
     margin: 0 auto;
-    text-align: center;
-}
-#town{
-    color: var(--primary-color);
-    font-size: larger;
-    font-weight: 700;
+    text-align: center
 }
 main h2{
     font-size: large;
+}
+main p{
+    color: var(--primary-color);
+    font-size: larger;
+    font-weight: 700;
 }
 .card {
     justify-content: center;
