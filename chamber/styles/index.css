@@ -171,6 +171,31 @@ header h1{
 }
 .event-content, #weather-content, .forecast-content {
     padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.event-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.event-content img{
+    width: 100%;
+}
+.event-content button{
+    padding:0;
+    border: 1pt solid #213c54;
+    background-color: transparent;
+    border-radius: 8px;
+    color: #213c54;
+    padding: 10px;
+}
+.event-content button:hover{
+    background-color: var(--secondary-color);
+    border: 1pt solid var(--secondary-color);
+
 }
 /* current weather content */
 .card {
@@ -185,6 +210,11 @@ header h1{
     color: var(--primary-color);
     font-size: larger;
     font-weight: 700;
+}
+#graphic{
+    background-color:#e2d14f;
+    border-radius: 8px;
+    margin: 20px;
 }
 .weather-space ul, .forecast-space ul {
     list-style: none;
@@ -294,15 +324,17 @@ header h1{
 }
 footer {
     display: grid;
-    grid-template-columns: 30% 30% 30%; 
+    grid-template-columns: 10% 30% 30% 30%; 
     justify-items: center;
     align-items: center;
     background-color: #213c54;
     padding: 30px;
     color: antiquewhite;
     margin: 0;
-    text-align: center;
-
+    text-align: left;
+}
+#logo img{
+    width: 100px;
 }
 footer p{
     font-size: 10pt;
@@ -424,7 +456,9 @@ footer p{
         font-size: 13pt;
     }
     .event-content, .weather-content, .forecast-content {
-        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        height: auto;
     }
     .weather-content{
         display: flex;
@@ -486,6 +520,10 @@ footer p{
         padding: 40px;
         margin: 0;
         text-align: center;
+    }
+    #logo img{
+        width: 70px;
+        padding-bottom: 20px;
     }
     .copyright{
         padding-right: 0;
