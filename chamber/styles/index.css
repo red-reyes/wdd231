@@ -109,17 +109,18 @@ header h1{
     padding: 20px;
 }
 .hero h2{
-    font-size:large;
+    font-size:x-large;
+    letter-spacing: 1pt;
 }
 .btn {
     padding: 10px 20px;
-    background-color: #bbd1ff;
+    background-color: #ffffff;
     color: black;
     text-decoration: none;
     border-radius: 8px;
 }
 .btn:hover {
-    background-color: #ffffff;
+    background-color: var(--secondary-color);
 }
 #page-title{
     padding: 20px;
