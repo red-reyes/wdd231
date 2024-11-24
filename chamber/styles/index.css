@@ -171,10 +171,13 @@ header h1{
     flex-direction: row;
     column-gap: 10px;
 }
-#weather-content img{
-    width: 25%;
-    order: -1;
-    margin-bottom: 150px;
+.card {
+    justify-content: center;
+    align-items: center; 
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
 }
 .weather-space ul, .forecast-space ul {
     list-style: none;
@@ -420,12 +423,6 @@ footer p{
         display: flex;
         flex-direction: row;
         column-gap: 10px;
-    }
-    .weather-content img{
-        max-width: 15%; 
-        margin: 0 10px;
-        order: -1;
-        margin-bottom: 100px;
     }
     .weather-space ul, .forecast-space ul {
         list-style: none;

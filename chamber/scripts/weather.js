@@ -7,14 +7,14 @@ const myKey = "fd3550dbe16551fca8f4f62fc882bc6c"
 const myLat = "11.556445942513216"
 const myLong = "104.92518213140643"
 
-const myURL = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&long=${myLong}&appid=${myKey}&units=metric`
+const myURL = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=metric`;
 
 async function apiFetch() {
     try {
         const response = await fetch(myURL);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            displayResults(data);
         } else {
             throw Error(await response.text());
         }
@@ -24,9 +24,8 @@ async function apiFetch() {
 }
 
 function displayResults(data) {
-    console.log('hello')
     myTown.innerHTML = data.name
-    myDescription.innerHTML = data.weather[0].myDescription
+    myDescription.innerHTML = data.weather[0].description
     myTemperature.innerHTML = `${data.main.temp}&deg;C`
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
     myGraphic.setAttribute('SRC', iconsrc)

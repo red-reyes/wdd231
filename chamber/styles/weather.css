@@ -19,7 +19,6 @@ p, a, li {
     font-style:normal;
     font-size: 10pt;
 }
-
 header{
     display: flex;
     justify-content: space-between;
@@ -92,27 +91,24 @@ header h1{
     font-size: 25pt;
     text-align: center;
 }
-
-h1{
-    font-weight: 700;
-    font-style:normal;
-    font-size:medium;
-}
-p{
-    font-weight: 400;
-    font-style:normal;
-    font-size: 10pt;
-}
 main{
-    background-color: var(--background-color);
-    padding: 20px;
-    margin: 20px;
+    justify-content: center;
+    align-items: center; 
+    padding: 20px; 
+    margin: 0 auto;
+    text-align: center;
+}
+main h2{
+    font-size: large;
 }
 .card {
-    margin: 20px;
+    justify-content: center;
+    align-items: center; 
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    height: 30vh;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 footer {
     display: grid;
@@ -136,6 +132,7 @@ footer p{
 .social-icons img{
     padding: 10px;
 }
+
 @media (max-width: 768px) {
     * {
         margin: 0;
