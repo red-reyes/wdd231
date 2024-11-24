@@ -98,6 +98,11 @@ main{
     margin: 0 auto;
     text-align: center;
 }
+#town{
+    color: var(--primary-color);
+    font-size: larger;
+    font-weight: 700;
+}
 main h2{
     font-size: large;
 }

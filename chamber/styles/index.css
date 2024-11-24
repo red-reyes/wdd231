@@ -179,6 +179,11 @@ header h1{
     text-align: center;
     max-width: 100%;
 }
+#town{
+    color: var(--primary-color);
+    font-size: larger;
+    font-weight: 700;
+}
 .weather-space ul, .forecast-space ul {
     list-style: none;
     padding: 0;
