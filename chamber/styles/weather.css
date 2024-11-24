@@ -96,7 +96,7 @@ main{
     align-items: center; 
     padding: 20px; 
     margin: 0 auto;
-    text-align: center
+    text-align: center;
 }
 main h2{
     font-size: large;
@@ -104,8 +104,9 @@ main h2{
 }
 main p{
     color:#012545;
-    font-size: larger;
-    font-weight: 700;
+    font-size: medium;
+    font-weight: 500;
+    padding-bottom: 10px;
 }
 .card {
     justify-content: center;
