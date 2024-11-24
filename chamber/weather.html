@@ -19,7 +19,7 @@
     <!-- add description -->
     <meta property="og:description" content="The site will provide information on local events, host networking opportunities, create business directories, and encourage local shopping. It aims to promote local economic growth, support local businesses, and foster a sense of community between the businesses.">
     <meta property="og:site_name" content="Timbuktu Chamber of Commerce">
-    <script src="scripts/index.js" defer></script>
+
 </head>
 <body>
     <header>
@@ -50,17 +50,22 @@
         </div>
     </main>
     <footer>
-        <p>Timbuktu Chamber of Commerce<br>10 Rue De La Paix<br>Timbuktu, Mali 999<br>info@timbuktucc.org<br>(233) 555-2300</p>
+        <div>
+            <p>Timbuktu Chamber of Commerce</p>
+            <p>10 Rue De La Paix</p>
+            <p>Timbuktu, Mali 999</p>
+            <p>info@timbuktucc.org</p>
+            <p>(233) 555-2300</p>
+        </div>
         <div class="social-icons">
             <a href="https://youtube.com" target="_blank"><img src="images/yt.svg" alt="youtube"></a>
-            </a>
             <a href="https://linkedin.com" target="_blank"><img src="images/in.svg" alt="linkedin"></a>
-            </a>
-            <a href="https://twitter.com" target="_blank"><img src="images/twit.svg"></a>
-            </a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twit.svg" alt="twitter"></a>
         </div>
-        <p>&copy;<span id="currentyear"></span> Timbuktu Chamber of Commerce</p>
-        <p id="datetimemodified"></p>
+        <div class="copyright">
+            <p>&copy;<span id="currentyear"></span> Timbuktu Chamber of 
+            <p id="datetimemodified"></p>
+        </div>
     </footer>
     <script src="scripts/weather.js" defer></script>
 </body>
