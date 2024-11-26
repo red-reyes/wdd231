@@ -39,7 +39,7 @@ async function apiFetch() {
 function displayResults(data) {
     myTown.innerHTML = data.name;
     myDescription.innerHTML = data.weather[0].description;
-    myTemperature.innerHTML = `${data.main.temp}&deg;C`;
+    myTemperature.innerHTML = `${data.main.temp}&deg;F`;
     myHumidity.innerHTML = `${data.main.humidity}%`;
 
     const sunriseTime = new Date(data.sys.sunrise * 1000).toLocaleTimeString();
