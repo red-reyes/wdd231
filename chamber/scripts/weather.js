@@ -20,7 +20,7 @@ const myKey = "fd3550dbe16551fca8f4f62fc882bc6c"
 const myLat = "11.556445942513216"
 const myLong = "104.92518213140643"
 
-const myURL = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=metric`;
+const myURL = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`;
 
 
 async function apiFetch() {
@@ -40,7 +40,7 @@ async function apiFetch() {
 function displayResults(data) {
     myTown.innerHTML = data.name;
     myDescription.innerHTML = data.weather[0].description;
-    myTemperature.innerHTML = `${data.main.temp}&deg;C`;
+    myTemperature.innerHTML = `${data.main.temp}&deg;F`;
     myHumidity.innerHTML = `${data.main.humidity}%`;
 
     const myTimezone = `UTC${data.timezone >= 0 ? '+' : ''}${(data.timezone / 3600).toFixed(1)}`;
