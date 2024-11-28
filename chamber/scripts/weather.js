@@ -8,6 +8,7 @@ menuToggle.addEventListener('click', () => {
 
 //weather
 const myTown = document.querySelector('#town');
+const myTimezone = document.querySelector('#timezone')
 const myDescription = document.querySelector('#description');
 const myTemperature = document.querySelector('#temperature');
 const myGraphic = document.querySelector('#graphic');
@@ -41,6 +42,9 @@ function displayResults(data) {
     myDescription.innerHTML = data.weather[0].description;
     myTemperature.innerHTML = `${data.main.temp}&deg;C`;
     myHumidity.innerHTML = `${data.main.humidity}%`;
+
+    const myTimezone = `UTC${data.timezone >= 0 ? '+' : ''}${(data.timezone / 3600).toFixed(1)}`;
+    document.querySelector('#timezone').innerHTML = myTimezone;
 
     const sunriseTime = new Date(data.sys.sunrise * 1000).toLocaleTimeString();
     const sunsetTime = new Date(data.sys.sunset * 1000).toLocaleTimeString();
