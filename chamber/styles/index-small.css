@@ -1,0 +1,90 @@
+@media (max-width: 768px) {
+    header{
+        flex-direction: column;
+    }
+    .menunav {
+        position: relative;
+    }
+    .menu-toggle {
+        display: block;
+        font-weight: 700;
+        font-size: 30pt;
+        padding-top: 20px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .menu-links {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        top: 100%; 
+        z-index: 10; 
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        padding: 5px;
+    }
+    .menu-links.show {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        padding: 10px;
+    }
+    .menu-links a {
+        padding: 0;
+        text-align: center;
+    }
+    #page-title{
+        padding: 10px;
+    }
+    .events {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .event-content, .weather-content, .forecast-content {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .weather-content{
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+    }
+
+    /* Grid view styling */
+    .member-card {
+        align-items: center;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    /* List view styling */
+    .member-list {
+        flex-direction: column;
+        margin: 0;
+        padding: 20px 0;
+    }
+    .member-list img {
+        margin-right: 0;
+    }
+
+    #directory {
+    display: flex;
+    flex-direction: column;
+    padding: 20px; 
+    max-width: 100%;
+    }
+        
+    footer {
+        display: flex;
+        flex-direction: column;
+        column-gap: 20px;
+        padding: 40px;
+        text-align: center;
+    }
+    #logo img{
+        width: 70px;
+        padding-bottom: 20px;
+    }
+}
