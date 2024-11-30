@@ -5,16 +5,20 @@
     .menunav {
         position: relative;
     }
-    .menu-toggle {
+    .menunav .menu-toggle {
         display: block;
         font-weight: 700;
         font-size: 30pt;
+        background: none;
+        cursor: pointer;
+        outline: none;
         padding-top: 20px;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
     }
-    .menu-links {
+
+    .menunav .menu-links {
         display: none;
         position: absolute;
         background-color: #fff;
@@ -24,14 +28,37 @@
         text-align: center;
         padding: 5px;
     }
-    .menu-links.show {
+    .menunav .menu-links.show {
         display: flex;
         flex-direction: column;
         width: auto;
         padding: 10px;
     }
-    .menu-links a {
+    .menunav .menu-links a {
         padding: 0;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .site-identity {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .site-identity .favicon {
+        width: 40px;
+        height: 40px;
+    }
+    .site-identity .site-info {
+        display: flex;
+        flex-direction: column;
+    }
+    .site-info p{
+        font-size: small;
+        text-align: center;
+    }
+    .site-info h1 {
+        font-size: 25pt;
         text-align: center;
     }
     #page-title{
