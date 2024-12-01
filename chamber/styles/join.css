@@ -42,15 +42,20 @@ input[type="submit"] {
     margin: 0 auto;
     margin-bottom: 20px;
     background-color: rgb(229, 232, 232);
-    border: 0.5pt solid rgb(63, 63, 63);
+    border: 0.5pt solid rgb(0, 0, 0);
+    animation: fadeIn 2s ease-in-out;
 }
 .membership-cards div button{
-    background-color:rgb(53, 53, 81);
+    background-color:rgb(33, 33, 108);
     color:aliceblue;
     padding: 10px;
     width:fit-content;
     border-radius: 5px;
     margin: 0 auto;
+    border: none;
+}
+.membership-cards div button:hover{
+    background-color: #000000;
 }
 .membership-cards div h2{
     font-size: large;
@@ -79,10 +84,33 @@ input[type="submit"] {
     font-size:large;
     color: rgb(39, 39, 79);
 }
+#dialog p{
+    text-align: justify;
+    padding: 20px;
+}
 #dialog button{
     width: 10%;
     margin-top: 20px;
     background-color: #26234a;
     color: white;
+    border: none;
+    padding: 10px;
+}
+#dialog button:hover{
+    transform: scale(1.5);
+    transition: transform 0.3s ease;
 }
 
+@keyframes fadeIn {
+    from {
+      opacity: 0; 
+    }
+    to {
+      opacity: 1; 
+}
+}
+
+.fade-in-visible {
+opacity: 1;
+animation: fadeIn 2s ease-in-out forwards;
+}
