@@ -8,7 +8,7 @@
     <title>Timbuktu Chamber of Commerce</title>
     <link rel="stylesheet" href = "styles/index.css">
     <link rel="stylesheet" href = "styles/index-small.css">
-    <link rel="stylesheet" href = "styles/weather.css">
+    <link rel="stylesheet" href = "styles/join.css">
     <link rel="icon" href="favicon-man.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,9 +19,10 @@
     <meta property="og:image" content="https://github.com/red-reyes/wdd231/blob/main/chamber/images/mountain.jpg">
     <meta property="og:url" content="https://red-reyes.github.io/wdd231/chamber/directory.html">
     <!-- add description -->
-    <meta property="og:description" content="The site will provide information on local events, host networking opportunities, create business directories, and encourage local shopping. It aims to promote local economic growth, support local businesses, and foster a sense of community between the businesses.">
+    <meta property="og:description" content="The site provides information on local events, host networking opportunities, create business directories, and encourage local shopping.">
     <meta property="og:site_name" content="Timbuktu Chamber of Commerce">
-
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 </head>
 <body>
     <header>
@@ -43,25 +44,14 @@
         </nav>
     </header>
     <main>
-        <h2>OpenWeatherMap.org API Test</h2>
-        <div class="card">
-            <p>Town: <span id="town"></span></p>
-            <p>Timezone: <span id="timezone"></span></p>
-            <p>Description: <span id="description"></span></p>
-            <p>Temperature: <span id="temperature"></span></p>
-            <img id="graphic" alt="Weather icon">
-            <p>Humidity: <span id="humidity"></span></p>
-            <p>Sunrise: <span id="sunrise"></span></p>
-            <p>Sunset: <span id="sunset"></span></p>
-        </div>
+
     </main>
     <footer>
+        <div id="logo">
+            <img src="favicon-man.ico" alt="tibumktu">
+        </div>
         <div>
-            <p>Timbuktu Chamber of Commerce</p>
-            <p>10 Rue De La Paix</p>
-            <p>Timbuktu, Mali 999</p>
-            <p>info@timbuktucc.org</p>
-            <p>(233) 555-2300</p>
+            <p>Timbuktu Chamber of Commerce<br>10 Rue De La Paix<br>Timbuktu, Mali 999<br>info@timbuktucc.org<br>(233) 555-2300</p>
         </div>
         <div class="social-icons">
             <a href="https://youtube.com" target="_blank"><img src="images/yt.svg" alt="youtube"></a>
@@ -73,6 +63,5 @@
             <p id="datetimemodified"></p>
         </div>
     </footer>
-    <script src="scripts/weather.js" defer></script>
 </body>
 </html>
