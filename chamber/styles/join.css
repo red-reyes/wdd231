@@ -34,7 +34,7 @@ input[type="submit"] {
 }
 
 /* cards*/
-#membership-info{
+.membership-cards div{
     display: grid;
     width: 80%;
     box-sizing: border-box;
@@ -44,7 +44,7 @@ input[type="submit"] {
     background-color: rgb(229, 232, 232);
     border: 0.5pt solid rgb(63, 63, 63);
 }
-#membership-info button{
+.membership-cards div button{
     background-color:rgb(53, 53, 81);
     color:aliceblue;
     padding: 10px;
@@ -52,7 +52,7 @@ input[type="submit"] {
     border-radius: 5px;
     margin: 0 auto;
 }
-#membership-info h2{
+.membership-cards div h2{
     font-size: large;
     padding-bottom: 20px;
 }
