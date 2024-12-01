@@ -109,35 +109,36 @@
                 <input type="submit" value="Submit Form">
             </form>
         </section>
-
+        <!-- modal, dialog box -->
+        <!-- np, bronze, silver, gold -->
+        <!--open, show dialog, close  --> 
         <section class="membership-cards">
-            <h3>Select a Membership Level</h3>
-            <div class="card-container">
-                <!-- Membership Cards -->
-                <div class="card" id="np-card">
-                    <h4>NP Membership</h4>
-                    <p>Non-profit, no fee</p>
-                    <a href="#" data-modal="np-modal">Learn More</a>
-                </div>
-                <div class="card" id="bronze-card">
-                    <h4>Bronze Membership</h4>
-                    <p>Affordable option</p>
-                    <a href="#" data-modal="bronze-modal">Learn More</a>
-                </div>
-                <div class="card" id="silver-card">
-                    <h4>Silver Membership</h4>
-                    <p>Medium-tier benefits</p>
-                    <a href="#" data-modal="silver-modal">Learn More</a>
-                </div>
-                <div class="card" id="gold-card">
-                    <h4>Gold Membership</h4>
-                    <p>Premium benefits</p>
-                    <a href="#" data-modal="gold-modal">Learn More</a>
-                </div>
+            <div id="membership-info">
+                <h2>NP Membership</h2>
+                <button id="openButton1">More Info</button>
+            </div>
+            
+            <div id="membership-info">
+                <h2>Bronze Membership</h2>
+                <button id="openButton2">More Info</button>
+            </div>
+
+            <div id="membership-info">
+                <h2>Silver Membership</h2>
+                <button id="openButton3">More Info</button>
+            </div>
+
+            <div id="membership-info">
+                <h2>Gold Membership</h2>
+                <button id="openButton4">More Info</button>
             </div>
         </section>
 
-        <!-- modal, dialog box -->
+        <dialog id="dialog">
+            <h3></h3>
+            <p></p>
+            <button id="closeButton">X</button>
+        </dialog>
     </main>
     <footer>
         <div id="logo">

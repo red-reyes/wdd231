@@ -1,37 +1,22 @@
 @media (max-width: 768px) {
     main {
         flex-direction: column;
-        margin: 0 auto;
-        box-sizing: border-box;
-        row-gap: 20px;
+        row-gap: 10px;
     }
-
-    main > section {
-        padding: 0;
+    .form-section, .membership-cards {
+        flex:auto;
+        max-width: 100%;
         width: 100%;
-    }
-
-    main > section:last-child {
-        margin-left: 0;
-    }
-    .membership-cards {
-        width: 100%;
-        box-sizing: border-box;
-    }
-    .card {
-        box-sizing: border-box;
-    }
-    form label {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+        padding: 20px;
         margin: 0;
     }
-
-    input, select, textarea {
-        box-sizing: border-box; 
+    h2{
+       font-size: medium;
+       padding-bottom: 20px;
     }
-    .modal {
-        display: none;
-    }
+    /* cards*/
+    /* dialog box */
+    #dialog {
+        width: 80%;
+    }  
 }

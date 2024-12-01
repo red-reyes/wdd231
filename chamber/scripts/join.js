@@ -27,3 +27,31 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const dialogBox = document.querySelector("#dialog");
+    const level = document.querySelector("#dialog h3");
+    const description = document.querySelector("#dialog p");
+    const close = document.querySelector("#closeButton");
+
+    const membershipData = {
+        openButton1: { level: "NP Membership", description: "To add later"},
+        openButton2: { level: "Bronze Membership", description: "To add later"},
+        openButton3: { level: "Silver Membership", description: "To add later"},
+        openButton4: { level: "Gold Membership", description: "To add later"},
+    };
+
+    Object.keys(membershipData).forEach((buttonId) => {
+        const openButton = document.querySelector(`#${buttonId}`);
+        openButton.addEventListener("click", () => {
+            const { level: levelText, description: descText } = membershipData[buttonId];
+            level.textContent = levelText;
+            description.textContent = descText;
+            dialogBox.showModal();
+        });
+    });
+
+    close.addEventListener("click", () => {
+        dialogBox.close();
+    });
+
+});
