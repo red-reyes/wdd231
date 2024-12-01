@@ -180,19 +180,6 @@ header h1{
 .event-content img{
     width: 100%;
 }
-.event-content button{
-    padding:0;
-    border: 1pt solid #213c54;
-    background-color: transparent;
-    border-radius: 8px;
-    color: #213c54;
-    padding: 10px;
-}
-.event-content button:hover{
-    background-color: var(--secondary-color);
-    border: 1pt solid var(--secondary-color);
-
-}
 .forecast-content{
     font-size:larger;
 }
