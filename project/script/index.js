@@ -16,8 +16,8 @@ const mySunrise = document.querySelector('#sunrise');
 const mySunset = document.querySelector('#sunset');
 
 const myKey = "fd3550dbe16551fca8f4f62fc882bc6c"
-const myLat = "24.165"
-const myLong = "120.673"
+const myLat = "24.155857776857115"
+const myLong = "120.66604109734003"
 
 const myURL = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=metric`;
 
