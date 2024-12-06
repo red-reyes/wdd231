@@ -1,0 +1,100 @@
+@media (max-width: 768px) {
+    header{
+        flex-direction: column;
+    }
+    .menunav {
+        position: relative;
+    }
+    .menunav .menu-toggle {
+        display: block;
+        font-weight: 700;
+        font-size:xx-large;
+        background: none;
+        cursor: pointer;
+        outline: none;
+        padding-top: 20px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .menunav .menu-links {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        top: 100%; 
+        z-index: 10; 
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        padding: 5px;
+    }
+    .menunav .menu-links.show {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        padding: 10px;
+    }
+    .menunav .menu-links a {
+        padding: 0;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .site-info h1 {
+        font-size: 20pt;
+        text-align: center;
+    }
+    .site-info p{
+        font-size: small;
+    }
+    .hero-content{
+        height: 100vh;
+    }
+    .hero-content h2 {
+        font-size: large;
+    }
+    .hero-content a{
+        font-size: medium;
+    }
+    .current{
+        flex-direction: column;
+        padding: 40px;
+    }
+    .sale{
+        width: 100%;
+    }
+    .sale h3{
+        font-size: 30pt;
+    }
+    .sale p{
+        font-size: 20pt;
+    }
+    .sale img{
+        width: 100%;
+        padding-top: 20px;
+    }
+    .weather{
+        width: 100%;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 10% 30% 30% 30%; 
+        justify-items: center;
+        align-items: center;
+        padding: 20px;
+        color: antiquewhite;
+        margin: 0;
+        text-align: left;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        column-gap: 20px;
+        padding: 40px;
+        text-align: center;
+    }
+    #logo img{
+        width: 70px;
+        padding-bottom: 20px;
+    }
+}

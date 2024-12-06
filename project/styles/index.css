@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6{
     font-weight:700;
 }
 h1 {
-    font-size:xxx-large;
+    font-size:xx-large;
     color:var(--primary-color)
 }
 h2{
@@ -78,7 +78,7 @@ header h1{
 }
 
 .menu-links a:hover {
-    text-decoration: underline;
+    color:#8a008a
 }
 .menu-links a{
     color: var(--primary-color);
