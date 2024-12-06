@@ -1,0 +1,32 @@
+1. Setup
+    - Refer to the project description, which provides overall site specifications.
+    - Create a single HTML document.
+
+2. Content
+    - Include the following content and use appropriate HTML elements to outline these sections with descriptions in the site plan document:
+        - ***Site Name***
+            - domain name is the primary identifier
+            - is critical for branding, visibility, and recognition, often coupled with a logo or logo version
+            - A representative domain that is available to purchase would be normally important but not required in this class.
+            - Provide a valid site name that is relevant to your project and a short reason why the the site name was selected.
+
+        - ***Site Purpose***
+            - attempt to provide scope to the website content in describing what services and information will be provided
+
+Site Name: Rainbow Reveal Co. Ltd.
+Tagline: Unveiling the Hidden Colors of Your Style
+
+Site Purpose: 
+At Wear Rainbow Co. Ltd., we specialize in creating innovative, customized shirts that transform in the sunlight. Our unique designs remain invisible when indoors, but once exposed to sunlight, they magically come to life in a beautiful rainbow of colors.
+
+Whether you're looking for a fun, quirky design or a personalized gift, we bring your creativity to life in a way that's truly one-of-a-kind. Our shirts aren't just clothing—they're an experience.
+
+Join us in discovering the magic of Wear Rainbow and wear your colors proudly, both indoors and out.
+
+Colors:
+
+background - White
+site title - #BB5343
+site purpose - black
+h1-h6 - #1B4789
+p,a - #3B3B3B
