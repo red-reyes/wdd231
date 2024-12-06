@@ -1,0 +1,224 @@
+/* Colors:
+background - White
+site title - #BB5343
+site purpose - black
+h1-h6 - #1B4789
+p,a - #3B3B3B */
+:root {
+    --primary-color: #961d3c;
+    --secondary-color: #1B4789;
+    --background-color: #ffffff;
+}
+* {
+    margin: 0;
+    padding:0;
+    font-family: "Karla";
+}
+body{
+    background-color: var(--background-color);
+}
+h1, h2, h3, h4, h5, h6{
+    font-style: normal;
+    font-weight:700;
+}
+h1 {
+    font-size:xxx-large;
+    color:var(--primary-color)
+}
+h2{
+    font-size: xx-large;
+}
+h3{
+    font-size: x-large;
+}
+h4{
+    font-size: large;
+}
+h5{
+    font-size: medium;
+}
+h6{
+    font-size: small;
+}
+p, a{
+    font-style: normal;
+    font-weight: 400;
+    color:#3B3B3B;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    align-items: center;
+}
+header h1{
+    color: var(--primary-color);
+}
+.menunav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+.menu-toggle {
+    display:none;
+    font-size: 15pt;
+    background: none;
+    border:none;
+    cursor: pointer;
+}
+.menu-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+.menu-links a:hover {
+    text-decoration: underline;
+}
+.menu-links a{
+    color: var(--primary-color);
+    text-decoration: none;
+    letter-spacing:1pt;
+    padding: 1.5rem;
+}
+.menu-links a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.site-identity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.site-identity .favicon {
+    width: 40px;
+    height: 40px;
+}
+.site-identity .site-info {
+    display: flex;
+    flex-direction: column;
+}
+.site-info p{
+    font-size: small;
+    text-align: center;
+}
+.site-info h1 {
+    font-size: 25pt;
+    text-align: center;
+}
+.hero-content{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-image: url('project/images/rainbow-teen.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.hero-content h2 {
+    background-color: rgba(100, 0, 33, 0.8);
+    padding: 40px;
+}
+.hero-content button {
+    margin: 20px;
+    padding: 10px 15px;
+    background-color: #1B4789;
+    border: none;
+    border-radius: 5px;
+}
+.hero-content a{
+    color: white;
+    font-size: large;
+    text-decoration: none;
+}
+.current{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: stretch;
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+}
+.sale{
+    width: 60%;
+    justify-content: center;
+    align-content: center;
+}
+.sale h3{
+    font-size: 50pt;
+    color:var(--primary-color);
+    font-weight: 800;
+    text-align: center;
+}
+.sale p{
+    font-weight: 800;
+    font-size: 23pt;
+    text-align: center;
+}
+.sale img{
+    width: 100%;
+    padding-top: 20px;
+}
+.weather{
+    width: 40%;
+}
+#town{
+    color:#961d3c;
+    font-weight: 500;
+    font-size: 30pt;
+}
+#temperature{
+    font-size: 50pt;
+    font-family: 'Karla';
+    font-weight: 700;
+}
+#graphic {
+    width: 150px;
+    height: auto;
+}
+.about{
+    padding: 40px;
+    background-color: #e9e9e9;
+    text-align: justify;
+}
+.about h4{
+    color:#961d3c;
+    font-size: larger;
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+footer {
+    display: grid;
+    grid-template-columns: 10% 30% 30% 30%; 
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    color: antiquewhite;
+    margin: 0;
+    text-align: left;
+    gap: 20px;
+}
+#logo img{
+    width: 80px;
+}
+footer p{
+    font-size: 10pt;
+    font-weight:100 ;
+}
+.copyright{
+    padding-right: 0;
+}
+.social-icons img{
+    padding: 10px;
+}

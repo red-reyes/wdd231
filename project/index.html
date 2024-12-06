@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+    <meta name="description" content="Directory of local businesses in Timbuktu.">
+    <meta name="author" content="Rhea June Reyes">
+    <title>Reveal Rainbow Co.</title>
+    <!-- styles here -->
+    <link rel="stylesheet" href = "styles/index.css">
+    <link rel="stylesheet" href = "styles/index-small.css">
+    <!-- favicon -->
+    <link rel="icon" href="favicon-man.ico">
+    <!-- font styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <!-- social media -->
+    <meta property="og:title" content="Reveal Rainbow">
+    <meta property="og:type" content="website">
+    <!-- add url -->
+    <meta property="og:image" content="https://github.com/red-reyes/wdd231/blob/main/project/images/mountain.jpg">
+    <meta property="og:url" content="https://red-reyes.github.io/wdd231/project/index.html">
+    <!-- add description -->
+    <meta property="og:description" content="Discover the magic of sunlight-activated fashion! Our website is your hub for exploring innovative, customized shirts that transform in the sunlight. Indoors, our designs stay invisible, but step outside, and they reveal a stunning spectrum of rainbow colors. Learn about our unique technology, shop our latest collections, and explore how we combine creativity with cutting-edge design to bring your wardrobe to life.">
+    <meta property="og:site_name" content="Reveal Rainbow Co.">
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="site-identity">
+            <img src="rainbowcat.ico" alt="Site Favicon" class="Reveal Rainbow">
+            <div class="site-info">
+                <h1>Reveal Rainbow Co.</h1>
+                <p class="tagline">Unveiling the Hidden Colors of Your Style</p>    
+            </div>
+        </div>
+        <nav class="menunav">
+            <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <ul class="menu-links">
+                <li><a href="index.html" target="_self">Home</a></li>
+                <li><a href="" target="_self">Products</a></li>
+                <li><a href="j" target="_self">Contact Us</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-content">
+            <h2>Join us in discovering the magic of Wear Rainbow and wear your colors proudly, both indoors and out.</h2>
+            <button><a href="" target="_blank">LEARN MORE</a></button>
+        </div>
+        <div class="current">
+            <section class="sale">
+                <h3>HUGE SALE!</h3>
+                <p>50% OFF FOR TEENS!</p>
+                <img src="images/rainbowsale.jpg" alt="rainbow sale">
+            </section>
+            <section class="weather">
+                <h3>Check today's sunshine and come out to reveal your rainbow!</h3><br>
+                <h4><span id="town"></span></h4>
+                <p>Today's Sky: <span id="description"></span></p>
+                <p><span id="temperature"></span></p>
+                <img id="graphic" alt="Weather icon">
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Sunrise: <span id="sunrise"></span></p>
+                <p>Sunset: <span id="sunset"></span></p>
+            </section>
+        </div>
+        <section class="about">
+            <h4>About Reveal Rainbow Co.</h4>
+            <p>We specialize in creating innovative, customized shirts that transform in the sunlight. Our unique designs remain invisible when indoors, but once exposed to sunlight, they magically come to life in a beautiful rainbow of colors.<br><br>
+            Whether you're looking for a fun, quirky design or a personalized gift, we bring your creativity to life in a way that's truly one-of-a-kind. Our shirts aren't just clothing—they're an experience.</p>
+        </section>
+    </main>
+    <footer>
+        <div id="logo">
+            <img src="images/rainbowcat.png" alt="revealrainbow">
+        </div>
+        <div>
+            <p>Reveal Rainbow Co.<br>Lane 123, Section 1, Henan Rd<br>Xitun District, Taichung City, Taiwan 407<br>(+866) 87-555-2300</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://youtube.com" target="_blank"><img src="images/yt.svg" alt="youtube"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="images/in.svg" alt="linkedin"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twit.svg" alt="twitter"></a>
+        </div>
+        <div class="copyright">
+            <p>&copy;<span id="currentyear"></span>Rhea June Reyes</p>
+            <p id="datetimemodified"></p>
+        </div>
+    </footer>
+</body>
+</html>
