@@ -237,4 +237,7 @@ footer p{
 .social-icons img{
     padding: 10px;
 }
+.social-icons img:hover{
+    transform: scale(1.2);
+}
 /* animation here */
