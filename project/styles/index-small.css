@@ -55,6 +55,9 @@
     }
     .hero-content h2 {
         font-size: large;
+        width: 80%;
+        padding: 20px;
+        margin:0;
     }
     .hero-content a{
         font-size: medium;
