@@ -396,6 +396,11 @@ footer p{
     border-radius: 8px;
     font-size: small;
 }
+/* calendar */
+.calendargrid iframe{
+    width: 100%;
+
+}
 /* recents */
 .recentgrid img{
     width: 100%;
