@@ -398,8 +398,9 @@ footer p{
 }
 /* calendar */
 .calendargrid iframe{
-    width: 100%;
-
+    width: 80%;
+    height: 60vh;
+    padding: 20px;
 }
 /* recents */
 .recentgrid img{
