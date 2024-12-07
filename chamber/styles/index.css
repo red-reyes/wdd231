@@ -332,3 +332,27 @@ footer p{
 .social-icons img{
     padding: 10px;
 }
+/* discover */
+.item1 { grid-area: header; }
+.item2 { grid-area: calendar; }
+.item3 { grid-area: photo1; }
+.item4 { grid-area: photo2; }
+.item5 { grid-area: photo3; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'calendar photo1 photo1 photo1 photo2 photo2'
+    'calendar photo3 photo3 photo3 photo3 photo3';
+  gap: 10px;
+  background-color: #3e739e;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
