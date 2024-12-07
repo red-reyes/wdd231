@@ -1,0 +1,26 @@
+to design a layout and use lazy loading while meeting the listed functional and development specifications including page performance metrics.
+
+-Use your site page template to create a new page named "discover.html" in the chamber folder.
+-As always, preserve the header, navigation, and footer content.
+-Do not add new CSS files to support this page. Use your existing CSS and then add or modify rules and declarations as needed.
+-At this point in your web design and development work you should be looking to reduce unnecessary or repetitive CSS declarations and CSS rules. Look for opportunities to create reusable classes that help you maintain your design consistency and layout scheme.
+
+-Use CSS Grid to create a sidebar layout of your own design.
+The mobile view should be a single column layout.
+-The sidebar content can be anything that provides information to the users such as demographics, statistical data, events, attractions, and/or a calendar, etc.
+-The main area will contain local photos of interest. At a minimum six (6) images are required. Each image should be optimized in terms of file size and captioned.
+-The images must not load until the user scrolls. Use a lazy loading technique to accomplish this feature.
+Using localStorage to store the last visit date by the client, display one of three possible messages about the time between page visits in the sidebar content area.
+There are many options for the placement of visitor information on the page. Consider the purpose and user experience in your selection. Some options include an overlay or message area that can be closed, inline into the content area, or the footer.
+
+If this is the user's first visit, display "Welcome! Let us know if you have any questions.".
+If the amount of time between visits is less than a day, display "Back so soon! Awesome!".
+Otherwise, display the number of days in a message like this: "You last visited n days ago.", where n is the actual, whole number of days between visits. If the number of days is 1, then change the language to "day" not "days".
+Consider using the localStorage object to store the date of the last visit to the page. This will allow you to compare the current date to the last visit date. In addition, storing the current date using Date.now() allows the date to be stored in milliseconds as demonstrated in this CodePen example.
+
+Use a CSS property effect whenever a user hovers over the images in the gallery with their mouse. This effect design is your choice. Do not apply this effect to the images in the mobile view.
+CodePen: Example Image Effects
+
+The first image responds to the hover event.
+
+Validate the links on the entire chamber website and continue to improve all the pages given the feedback from your submissions and from your peers.

@@ -160,3 +160,34 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+
+// lazy load
+
+document.addEventListener("DOMContentLoaded", function () {
+    const lazyImages = document.querySelectorAll(".gallerygrid img");
+
+    const handleIntersection = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                
+                img.classList.add("visible");
+                               
+                if (img.dataset.src) {
+                    img.src = img.dataset.src;
+                }
+
+                observer.unobserve(img);
+            }
+        });
+    };
+
+    const observerOptions = {
+        root: null,
+        threshold: 0.1, 
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, observerOptions);
+
+    lazyImages.forEach(img => observer.observe(img));
+});

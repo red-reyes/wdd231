@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="es-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content= "width=device-width, initial-scale=1.0">
@@ -41,17 +39,50 @@
             </ul>
         </nav>
     </header>
-
         <!-- Do not add new CSS files to support this page. Use your existing CSS and then add or modify rules and declarations as needed. -->
         <!-- Use CSS Grid to create a sidebar layout of your own design. The mobile view should be a single column layout. -->
     <main class="discover-layout">
         <div class="grid-container">
-            <div class="item1">Heading</div>
-            <div class="item2">Calendar</div>
-            <div class="item3">Photo</div>  
-            <div class="item4">Photo</div>
-            <div class="item5">Photo</div>
-          </div>          
+            <div class="announcegrid">
+                <h2>Timbuktu News</h2>
+                <h3>Inevitable Rise of Robots: Changing the Future of Society</h3>
+                <img src="images/news.jpg" alt="robotnews">
+                <h3>Emerging Investment Opportunities in Timbuktu by 2025</h3>
+                <img src="images/infrastructures.jpg" alt="infrastructures">
+            </div>
+            <div class="weathergrid">
+                <h2>Weather Today</h2>
+            <div class="weather-card">
+                <p><span id="town"></span></p>
+                <p>Description: <span id="description"></span></p>
+                <p>Temperature: <span id="temperature"></span></p>
+                <img id="graphic" alt="Weather icon">
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Sunrise: <span id="sunrise"></span></p>
+                <p>Sunset: <span id="sunset"></span></p>
+            </div>
+            </div>
+            <div class="calendargrid">
+                <h2>Calendar</h2>
+                <p>No Updates Available</p>
+            </div>  
+            <div class="recentgrid">
+                <h2>Recents
+                </h2>
+                <h3>Timbuktu Oasis Resort Opening on December 15, 2024!</h3>
+                <img src="images/resort.jpg">
+            </div>
+            <div class="gallerygrid">
+                <h2>Gallery</h2>
+                <div class="galleryimages">
+                    <img src="images/conference.jpg" alt="conference" class="lazy-load">
+                    <img src="images/golf.jpg" alt="golf event" class="lazy-load">
+                    <img src="images/city.jpg" alt="city" class="lazy-load">
+                    <img src="images/camels.jpg" alt="christmas" class="lazy-load">
+                    <img src="images/mountain.jpg" alt="mountain" class="lazy-load">
+                </div>
+            </div>
+        </div>          
     </main>
     <footer>
         <div id="logo">

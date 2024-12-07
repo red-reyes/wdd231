@@ -37,7 +37,6 @@
     .menunav .menu-links a {
         padding: 0;
         text-align: center;
-        text-decoration: none;
     }
 
     .site-identity {
@@ -118,5 +117,11 @@
     #logo img{
         width: 70px;
         padding-bottom: 20px;
+    }
+    /* grids */
+    /* discover */
+    .grid-container {
+        display: flex;
+        flex-direction: column;
     }
 }
