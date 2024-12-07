@@ -397,9 +397,8 @@ footer p{
     font-size: small;
 }
 /* calendar */
-.calendargrid iframe{
+.calendargrid img{
     width: 80%;
-    height: 60vh;
     padding: 20px;
 }
 /* recents */
