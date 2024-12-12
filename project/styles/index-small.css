@@ -1,6 +1,8 @@
 @media (max-width: 768px) {
     header{
         flex-direction: column;
+        position: relative;
+        height: auto;
     }
     .menunav {
         position: relative;

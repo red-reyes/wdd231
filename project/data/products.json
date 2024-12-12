@@ -1,147 +1,147 @@
 [
     {
         "name":"Kid's Hoodie KH0304",
-        "image":"images/resort-min",
+        "image":["images/khd.jpg", "images/khd1.jpg"],
         "category": "1",
         "sizes": "S-XXL",
         "prices": "USD 7.99 - USD 14.99 per piece"
     },
     {
         "name":"Kid's Hoodie KH0404",
-        "image":"images/resort-min",
+        "image":["images/khd2.jpg", "images/khd3.jpg"],
         "category": "1",
         "sizes": "S-XXL",
         "prices": "USD 12.99 - USD 20.99 per piece"
     },
     {
         "name":"Kid's Hoodie KH1305",
-        "image":"images/resort-min",
+        "image":["images/khd5.jpg", "images/khd6.jpg"],
         "category": "1",
         "sizes": "S-XXL",
         "prices": "USD 18.99 - USD 24.99 per piece"
     },
     {
         "name":"Kid's Tumbler KT0507",
-        "image":"images/resort-min",
+        "image":["images/ktm.jpg", "images/atm1.jpg"],
         "category": "1",
         "sizes": "500ml and 1000ml",
         "prices": "USD 10.99 - USD 16.99 per piece"
     },
     {
         "name":"Kid's Head Cap KHD0430",
-        "image":"images/resort-min",
+        "image":["images/khc.jpg", "images/khc1.jpg"],
         "category": "1",
         "sizes": "S-XXL",
         "prices": "USD 9.99 - USD 17.99 per piece"
     },
     {
         "name":"Kid's T-Shirt KTS0608",
-        "image":"images/resort-min",
+        "image":["images/kts2.jpg", "images/kts1.jpg"],
         "category": "1",
         "sizes": "S-XXL",
         "prices": "USD 5.99 - USD 8.99 per piece"
     },
     {
         "name":"Kid's T-Shirt KTS0908",
-        "image":"images/resort-min",
+        "image":"images/kts.jpg",
         "category": "1",
         "sizes": "S-XXL",
         "prices": "USD 5.99 - USD 8.99 per piece"
     },
     {
         "name":"Teen's Unisex Hoodie TUH0304",
-        "image":"images/resort-min",
+        "image":["images/thd.jpg", "images/thd1.jpg"],
         "category": "2",
         "sizes": "S-XXL",
         "prices": "USD 9.99 - USD 20.99 per piece"
     },
     {
         "name":"Teen's Unisex Hoodie TUH0404",
-        "image":"images/resort-min",
+        "image":["images/thd2.jpg", "images/thd3.jpg"],
         "category": "2",
         "sizes": "S-XXL",
         "prices": "USD 14.99 - USD 25.99 per piece"
     },
     {
         "name":"Teen's Unisex Hoodie TUH1305",
-        "image":"images/resort-min",
+        "image":["images/thd4.jpg", "images/thd5.jpg"],
         "category": "2",
         "sizes": "S-XXL",
         "prices": "USD 20.99 - USD 34.99 per piece"
     },
     {
         "name":"Teen's Tumbler TT0507",
-        "image":"images/resort-min",
+        "image":["images/ttm.jpg", "images/ttm1.jpg"],
         "category": "2",
         "sizes": "500ml and 1000ml",
         "prices": "USD 10.99 - USD 16.99 per piece"
     },
     {
         "name":"Teens's Head Cap THC0723",
-        "image":"images/resort-min",
+        "image":["images/thc.jpg", "images/thc1.jpg"],
         "category": "2",
         "sizes": "S-XXL",
         "prices": "USD 14.99 - USD 22.99 per piece"
     },
     {
         "name":"Teen's T-Shirt TTS0608",
-        "image":"images/resort-min",
+        "image":["images/tts.jpg", "images/tts1.jpg"],
         "category": "2",
         "sizes": "S-XXL",
         "prices": "USD 7.99 - USD 11.99 per piece"
     },
     {
         "name":"Teen's T-Shirt TTS0908",
-        "image":"images/resort-min",
+        "image":["images/tts2.jpg", "images/tts3.jpg"],
         "category": "2",
         "sizes": "S-L",
         "prices": "USD 8.99 - USD 12.99 per piece"
     },
     {
         "name":"Adult's Unisex Hoodie AUH0304",
-        "image":"images/resort-min",
+        "image":["images/ahd.jpg", "images/ahd1.jpg"],
         "category": "3",
         "sizes": "S-XXL",
         "prices": "USD 11.99 - USD 22.99 per piece"
     },
     {
         "name":"Adult's Unisex Hoodie AUH0404",
-        "image":"images/resort-min",
+        "image":["images/ahd4.jpg", "images/ahd3.jpg"],
         "category": "3",
         "sizes": "S-XXL",
         "prices": "USD 16.99 - USD 28.99 per piece"
     },
     {
         "name":"Adult's Unisex Hoodie AUH1305",
-        "image":"images/resort-min",
+        "image":["images/ahd7.jpg", "images/ahd8.jpg"],
         "category": "3",
         "sizes": "S-XXL",
         "prices": "USD 22.99 - USD 37.99 per piece"
     },
     {
         "name":"Adult's Tumbler AT0507",
-        "image":"images/resort-min",
+        "image":["images/atm.jpg", "images/atm2.jpg"],
         "category": "3",
         "sizes": "500ml and 1000ml",
         "prices": "USD 11.99 - USD 17.99 per piece"
     },
     {
         "name":"Adult's Head Cap AHD0503",
-        "image":"images/resort-min",
+        "image":["images/ahc2.jpg", "images/ahc1.jpg"],
         "category": "3",
         "sizes": "S-XXL",
         "prices": "USD 15.99 - USD 23.99 per piece"
     },
     {
         "name":"Adult's's T-Shirt ATS0608",
-        "image":"images/resort-min",
+        "image":["images/ats.jpg", "images/ats1.jpg"],
         "category": "3",
         "sizes": "S-XXL",
         "prices": "USD 9.99 - USD 14.99 per piece"
     },
     {
         "name":"Adult's T-Shirt TTS0908",
-        "image":"images/resort-min",
+        "image":["images/ats3.jpg", "images/ats4.jpg"],
         "category": "3",
         "sizes": "S-XXL",
         "prices": "USD 9.99 - USD 14.99 per piece"

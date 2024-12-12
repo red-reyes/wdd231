@@ -1,8 +1,15 @@
+main{
+    padding-top: 180px;
+}
 .buttons {
     padding: 0 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 5px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 #all-btn, #kids-btn, #teens-btn, #adults-btn{
     font-weight: 800;
@@ -41,15 +48,17 @@
 
 #gridview, #listview {
     background-color: var(--background-color);
-    border: 1px solid #2d5272;
+    border: none;
     border-radius: 8px;
     padding: 10px;
     cursor: pointer;
 }
 
 #gridview:hover, #listview:hover {
-    border: 1px solid #2d5272;
-    background-color: #fff;
+    background-color: #f0dc00;
+    transition: transform 0.5s ease;
+    transform: scale(1.1); 
+    z-index: 10;
 }
 
 #gridview img, #listview img {
@@ -66,6 +75,7 @@
     margin: 0;
     padding: 20px;
     width: 200px;
+    justify-content: center;
 }
 
 #product-directory {
@@ -79,22 +89,138 @@
 .product-list {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     font-size: small;
     padding: 10px;
-    width: 100%;
+    width: 50%;
     column-gap: 10px;
 }
 
 .product-list img {
-    max-width: 50px; 
+    max-width: 150px; 
     height: auto; 
     margin-right: 20px;
     object-fit: contain;  
 }
 .product-list:nth-child(odd) {
-    background-color:var(--background-color); 
+    background-color:#d8b5b5; 
 }
 #product-directory.member-list-view {
     display: block;
+}
+/* Style for grid and list views */
+.product-card, .product-list {
+    border:none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.product-card {
+    display: inline-block;
+    width: calc(25% - 20px); /* Adjust as needed */
+    vertical-align: top;
+}
+.product-list {
+    display: block;
+    width: 100%;
+}
+.product-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+.product-images img:hover{
+    transition: transform 0.5s ease;
+    transform: scale(1.5); 
+    z-index: 10;
+}
+.product-images img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+/* Modal styles */
+#image-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#modal-content {
+    position: relative;
+    margin: 10% auto;
+    max-width: 90%;
+    text-align: center;
+}
+
+#modal-image {
+    width: 100%;
+    max-width: 50%;
+    height: auto;
+    border-radius: 5px;
+}
+#close-modal {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+#close-modal:hover {
+    color: rgb(184, 1, 56);
+}
+/* page divisions */
+.updatesgrid {
+    width: 30%;
+    position: fixed;
+    top: 180px;
+    left: 0;
+    height: calc(100vh - 200px); 
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; 
+    z-index: 1; 
+    padding: 20px;
+}
+.productgrid {
+    margin-left: 30%;
+    padding-top: 220px;
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+.updatesgrid img{
+    width: 100%;
+    padding: 20px 0;
+}
+.updatesgrid h3{
+    color:#aa3c3a;
+    font-weight: 800;
+    font-size: 25pt;
+}
+.updatesgrid h4{
+    font-weight: 800;
+    font-size: 40pt;
+}
+.updatesgrid p{
+    font-size: 16pt;
+}
+.productgrid h2{
+    font-size: 25pt;
+    color:brown;
+    font-weight: 800;
+    text-align: center;
 }

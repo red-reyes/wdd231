@@ -1,0 +1,68 @@
+/* Responsive styles for mobile view */
+@media (max-width: 768px) {
+    .buttons {
+        grid-template-columns: 1fr; 
+        column-gap: 0;
+        row-gap: 10px;
+        width: 40%;
+        padding: 10px;
+    }
+    main{
+        padding-top: 0;
+    }
+    /* Buttons styling */
+    #all-btn, #kids-btn, #teens-btn, #adults-btn {
+        width: 100%;
+    }
+
+    .updatesgrid {
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        height: auto;
+        box-shadow: none;
+        overflow-y: auto; 
+        z-index: index none;; 
+        padding: 0;
+        text-align: center;
+    }
+    /* Product grid adjustments */
+    .productgrid {
+        margin: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    #product-directory {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+    .updatesgrid img{
+        width: 100%;
+        padding:0;
+    }
+    .updatesgrid h3{
+        padding-top: 20px;
+    }
+    .updatesgrid p{
+        padding-bottom: 20px;
+    }
+    .product-list {
+        width: 100%; 
+    }
+
+    /* Modal adjustments */
+    #modal-content {
+        max-width: 100%;
+        padding: 20px;
+
+    }
+    #modal-image {
+        max-width: 100%;
+    }
+}
