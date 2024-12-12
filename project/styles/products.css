@@ -212,6 +212,7 @@ main{
     color:#a3211f;
     font-weight: 800;
     font-size: 25pt;
+    padding-top: 20px;
 }
 .updatesgrid h4{
     font-weight: 800;
@@ -219,6 +220,7 @@ main{
 }
 .updatesgrid p{
     font-size: 16pt;
+    padding-bottom: 20px;
 }
 .productgrid h2{
     font-size: 25pt;
