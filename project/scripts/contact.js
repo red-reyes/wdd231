@@ -32,9 +32,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const close = document.querySelector("#closeButton");
 
     const membershipData = {
-        openButton1: { level: "Taipei Branch", description: "Founded on...." },
-        openButton2: { level: "Kaohsiung Branch", description: "Founded on...." },
-        openButton3: { level: "Taichung Branch", description: "Founded on...." },
+        openButton1: { level: "Taipei Branch", description: "Established in 2023, the Taipei branch of Reveal Rainbow Co. is conveniently located in the bustling heart of the city. Designed to embody the vibrant spirit of the brand, this branch serves as a hub for innovation, collaboration, and growth. Strategically positioned in the city center, it offers unparalleled accessibility for clients, partners, and employees alike. Reveal Rainbow Co. continues to shine as a beacon of excellence, bringing its signature commitment to quality and creativity to Taipei’s dynamic business landscape." },
+        openButton2: { level: "Kaohsiung Branch", description: "Established in 2018, the Kaohsiung branch of Reveal Rainbow Co. was inspired by the rapid success of its Taichung counterpart. Nestled in the vibrant port city, this branch has become a key player in the company’s expanding operations. Known for its dynamic energy and strategic location, the Kaohsiung branch continues to uphold Reveal Rainbow Co.'s commitment to excellence, driving innovation and strengthening its global presence." },
+        openButton3: { level: "Taichung Branch", description: "Founded in 2015, the Taichung branch of Reveal Rainbow Co. began as a humble hobby and quickly grew into a thriving retail business. Over the years, it has evolved into an international manufacturing powerhouse, bringing creativity and innovation to a global audience. Located in the vibrant city of Taichung, this branch symbolizes the company’s journey of growth, resilience, and success, making it a cornerstone of Reveal Rainbow Co.'s expanding legacy." },
     };
 
     Object.keys(membershipData).forEach((buttonId) => {
