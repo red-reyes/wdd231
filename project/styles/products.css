@@ -4,14 +4,14 @@ main{
 .buttons {
     padding: 0 20px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 5px;
     width: 50%;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
 }
-#all-btn, #kids-btn, #teens-btn, #adults-btn{
+#kids-btn, #teens-btn, #adults-btn{
     font-weight: 800;
     border: none;
     padding: 10px;
@@ -19,9 +19,7 @@ main{
     background:#66459e;
     color: white;
 }
-#all-btn:hover{
-    background: #cf4644;
-}
+
 #kids-btn:hover{
     background: #225d25;
 }
@@ -31,6 +29,7 @@ main{
 #adults-btn:hover{
     background: #b5750d;
 }
+
 #product-directory {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

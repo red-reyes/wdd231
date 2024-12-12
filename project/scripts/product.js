@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const directory = document.getElementById('product-directory');
     const gridViewBtn = document.getElementById('gridview');
     const listViewBtn = document.getElementById('listview');
-    const allBtn = document.getElementById('all-btn');
+
     const kidsBtn = document.getElementById('kids-btn');
     const teensBtn = document.getElementById('teens-btn');
     const adultsBtn = document.getElementById('adults-btn');
@@ -30,7 +30,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     const response = await fetch('data/products.json');
     const products = await response.json();
 
-    let isGrid = true; // Default to grid view
+    // my default grid view
+    let isGrid = true;
 
     // Render products
     const renderProducts = (products, isGrid) => {
@@ -61,9 +62,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     };
 
-    // Initially render all products in grid view
-    renderProducts(products, isGrid);
-
     // Filter products by category
     const filterProducts = (category) => {
         const filteredProducts = category === "all"
@@ -72,8 +70,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         renderProducts(filteredProducts, isGrid);
     };
 
+    // Initially render only "Kids" products
+    filterProducts("1");
+
     // Event listeners for filter buttons
-    allBtn.addEventListener("click", () => filterProducts("all"));
     kidsBtn.addEventListener("click", () => filterProducts("1"));
     teensBtn.addEventListener("click", () => filterProducts("2"));
     adultsBtn.addEventListener("click", () => filterProducts("3"));
