@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             </div>
         `).join('');
     };
-
     // Initially render all products in grid view
     renderProducts(products, isGrid);
 

@@ -54,8 +54,6 @@ function displayResults(data) {
 apiFetch();
 
 //footer
-//current year
-//date
 document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("currentyear").textContent = new Date().getFullYear();
@@ -63,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Display last modification date and time
     const full = document.querySelector("#datetimemodified");
 
-    if (full) { // Check to avoid errors if the element is missing
+    if (full) {
         const today = new Date();
 
         const options = {
