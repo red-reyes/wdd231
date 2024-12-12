@@ -1,9 +1,3 @@
-/* Colors:
-background - White
-site title - #BB5343
-site purpose - black
-h1-h6 - #1B4789
-p,a - #3B3B3B */
 :root {
     --primary-color: #961d3c;
     --secondary-color: #1B4789;
@@ -51,7 +45,6 @@ header h1{
 }
 .menu-toggle {
     display:none;
-    font-size: 15pt;
     background: none;
     border:none;
     cursor: pointer;
@@ -77,10 +70,6 @@ header h1{
     letter-spacing:1pt;
     padding: 20px;
     font-weight: 800;
-}
-.menu-links a.active {
-    font-weight: bold;
-    text-decoration: underline;
 }
 .menu-links a.active {
     background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
@@ -116,7 +105,7 @@ header img {
     position: relative;
     width: 100%;
     height: 150vh;
-    background-image: url('https://images.unsplash.com/photo-1550542442-d5c354329585?q=80&w=1796&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('https://raw.githubusercontent.com/red-reyes/wdd231/refs/heads/main/project/images/mountain.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
