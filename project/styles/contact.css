@@ -1,0 +1,213 @@
+h2 {
+    text-align: center;
+}
+
+/* form---------------------- */
+.contactsrow {
+    display: flex;
+    flex-direction: row;
+    padding-top: 180px;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 0;
+}
+
+.branch-cards,
+.form-section {
+    flex: 1 1 50%;
+    box-sizing: border-box;
+}
+
+.branch-cards {
+    background-color: #640120;
+}
+
+.branch-cards img {
+    width: 100%;
+}
+
+.branch-cards div {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.branch-cards h2 {
+    margin-bottom: 10px;
+    font-size: larger;
+    font-weight: 800;
+    background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.branch-cards button,
+.form-section input[type="submit"] {
+    font-size: large;
+    font-weight: 800;
+    border: 1pt solid #640120;
+    border-radius: 5px;
+    color: #640120;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.branch-cards button {
+    width: 25%;
+    margin: 0 auto;
+}
+
+.branch-cards button:hover,
+.form-section input[type="submit"]:hover {
+    background-color: #e2e2e2;
+}
+
+.form-section {
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 600px;
+    margin-top: 50px;
+}
+
+.form-section form label {
+    display: block;
+    padding: 15px 0;
+    width: 100%;
+    text-align: left;
+}
+
+.form-section form input,
+.form-section form textarea,
+.form-section form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-section form input[type="submit"] {
+    width: auto;
+    margin-top: 20px;
+    align-self: center;
+}
+
+/* dialog box */
+#dialog {
+    width: 40%;
+    max-width: 600px;
+    padding: 20px;
+    border: none;
+    background-color: #ffffff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    text-align: center;
+}
+
+::backdrop {
+    background-color: rgba(26, 26, 52, 0.8);
+}
+
+#dialog h3 {
+    margin: 0;
+    font-size: large;
+    color: rgb(39, 39, 79);
+}
+
+#dialog p {
+    text-align: justify;
+    padding: 20px;
+}
+
+#dialog button {
+    width: 10%;
+    margin-top: 20px;
+    background-color: #26234a;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+#dialog button:hover {
+    transform: scale(1.5);
+    transition: transform 0.3s ease;
+}
+
+.banner {
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1550542442-d5c354329585?q=80&w=1796&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    object-fit: fill;
+    aspect-ratio: 6 / 2;
+}
+
+.banner h2 {
+    background-color: rgba(78, 0, 18, 0.6);
+    padding: 40px;
+    width: 50%;
+    font-size: 20pt;
+}
+
+.banner button {
+    margin: 20px;
+    padding: 10px 15px;
+    background-color: #1B4789;
+    border: none;
+    border-radius: 5px;
+}
+
+.banner button:hover {
+    background-color: #70142b;
+}
+
+.banner a {
+    color: white;
+    font-size: large;
+    text-decoration: none;
+}
+
+.banner button a:hover {
+    background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in-visible {
+    opacity: 1;
+    animation: fadeIn 2s ease-in-out forwards;
+}

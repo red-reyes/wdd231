@@ -53,6 +53,9 @@ function displayResults(data) {
 
 apiFetch();
 
+// join
+
+
 //footer
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -79,4 +82,3 @@ document.addEventListener("DOMContentLoaded", function () {
         full.innerHTML = `Last Modification: <span class="highlight">${formattedDateTime}</span>`;
     }
 });
-

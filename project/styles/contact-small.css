@@ -1,0 +1,71 @@
+@media(max-width: 768px){
+    /* form---------------------- */
+    .contactsrow {
+        flex-direction: column;
+        padding-top: 0;
+        gap: 20px;
+
+    }
+    .branch-cards,
+    .form-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .branch-cards button,
+    .form-section input[type="submit"] {
+        font-size: smallmedium;
+    }
+    
+    .branch-cards button {
+        width: 40%;
+    }
+    
+    .form-section {
+        height: auto;
+    }
+    
+    .form-section form {
+        width: 70%;
+        margin-top: 0;
+    }
+
+    /* dialog box */
+    #dialog {
+        width: 80%;
+    }
+
+    .banner {
+        aspect-ratio: 4 / 2;
+        padding-top: 20px;
+    }
+    
+    .banner h2 {
+        width: 40%;
+        font-size: medium;
+        padding: 20px;
+    }
+
+    .banner button:hover {
+        background-color: #70142b;
+    }
+    
+    .banner a {
+        font-size: small;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    .fade-in-visible {
+        opacity: 1;
+        animation: fadeIn 2s ease-in-out forwards;
+    }
+}

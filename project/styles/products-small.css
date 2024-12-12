@@ -2,10 +2,8 @@
 @media (max-width: 768px) {
     .buttons {
         grid-template-columns: 1fr; 
-        column-gap: 0;
-        row-gap: 10px;
-        width: 40%;
-        padding: 10px;
+        row-gap: 5px;
+        width: 30%;
     }
     main{
         padding-top: 0;
@@ -57,6 +55,9 @@
     }
 
     /* Modal adjustments */
+    #close-modal {
+        right: 25px;
+    }
     #modal-content {
         max-width: 100%;
         padding: 20px;

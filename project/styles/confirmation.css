@@ -1,0 +1,17 @@
+main{
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    row-gap: 20px;
+    height: 50vh;
+    align-items: stretch;
+}
+h1{
+    font-size: x-large;
+}
+h2{
+    font-size: medium;
+}
