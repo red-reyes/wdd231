@@ -85,6 +85,27 @@ document.addEventListener('DOMContentLoaded', function() {
         myGraphic.setAttribute('alt', data.weather[0].description);
     }
 
-    apiFetch();  // Call the weather fetch function
+    apiFetch();
 
 });
+// lazy
+document.addEventListener('DOMContentLoaded', function() {
+    const lazyImages = document.querySelectorAll('.lazy-load');
+  
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          entry.target.setAttribute('loading', 'lazy');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+  
+    lazyImages.forEach(image => {
+      observer.observe(image);
+    });
+  });
+  
