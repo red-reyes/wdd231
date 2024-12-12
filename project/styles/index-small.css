@@ -89,6 +89,13 @@
     .weather{
         width: 100%;
     }
+    .about h4{
+        font-size: 20pt;
+        text-align: left;
+    }
+    .about p{
+        font-size: 12pt;
+    }
     footer {
         display: grid;
         grid-template-columns: 10% 30% 30% 30%; 

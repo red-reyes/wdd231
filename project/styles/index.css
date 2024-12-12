@@ -215,14 +215,16 @@ header img {
 }
 .about{
     padding: 40px;
-    background-color: #e9e9e9;
     text-align: justify;
 }
 .about h4{
     color:#961d3c;
-    font-size: larger;
+    font-size: 30pt;
     font-weight: 800;
     padding-bottom: 20px;
+}
+.about p{
+    font-size: 14pt;
 }
 footer {
     display: grid;
