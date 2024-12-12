@@ -178,7 +178,7 @@ main{
     right: 200px;
     font-size: 40pt;
     font-weight: bold;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 247, 0);
     cursor: pointer;
 }
 #close-modal:hover {
@@ -191,7 +191,7 @@ main{
     top: 180px;
     left: 0;
     height: calc(100vh - 200px); 
-    background-color: white;
+    background-color: rgb(240, 202, 214);
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     overflow-y: auto; 
     z-index: 1; 
@@ -203,7 +203,6 @@ main{
     width: 70%;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #fff;
     justify-content: center;
     align-items: center;
 }
@@ -212,7 +211,7 @@ main{
     padding: 20px 0;
 }
 .updatesgrid h3{
-    color:#aa3c3a;
+    color:#a3211f;
     font-weight: 800;
     font-size: 25pt;
 }
