@@ -13,14 +13,20 @@
         flex-direction: column;
     }
     
-    
     .branch-cards button,
     .form-section input[type="submit"] {
         font-size: smallmedium;
     }
-    
+    .branch-cards div {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
     .branch-cards button {
-        width: 40%;
+        width: 60%;
     }
     
     .form-section {

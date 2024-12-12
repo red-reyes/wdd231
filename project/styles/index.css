@@ -120,6 +120,7 @@ header img {
     align-items: center;
     text-align: center;
     color: white;
+    object-fit: fill;
 }
 .hero-content h2 {
     background-color: rgba(78, 0, 18, 0.6);
