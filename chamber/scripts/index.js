@@ -162,7 +162,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // lazy load
-
 document.addEventListener("DOMContentLoaded", function () {
     const lazyImages = document.querySelectorAll(".gallerygrid img");
 

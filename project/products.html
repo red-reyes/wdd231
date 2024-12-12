@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+    <meta name="description" content="Business Page of Reveal Rainbow Co. Taichung, Taiwan">
+    <meta name="author" content="Rhea June Reyes">
+    <title>Reveal Rainbow Co.</title>
+    <!-- styles here -->
+    <link rel="stylesheet" href = "styles/index.css">
+    <link rel="stylesheet" href = "styles/index-small.css">
+    <link rel="stylesheet" href = "styles/products.css">
+    <link rel="stylesheet" href = "styles/products-small.css">
+    <!-- favicon -->
+    <link rel="icon" href="rainbowcat.ico">
+    <!-- font styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <!-- social media -->
+    <meta property="og:title" content="Reveal Rainbow">
+    <meta property="og:type" content="website">
+    <!-- add url -->
+    <meta property="og:image" content="https://github.com/red-reyes/wdd231/blob/main/project/images/mountain.jpg">
+    <meta property="og:url" content="https://red-reyes.github.io/wdd231/project/index.html">
+    <!-- add description -->
+    <meta property="og:description" content="Discover the magic of sunlight-activated fashion! Our website is your hub for exploring innovative, customized shirts that transform in the sunlight. Indoors, our designs stay invisible, but step outside, and they reveal a stunning spectrum of rainbow colors. Learn about our unique technology, shop our latest collections, and explore how we combine creativity with cutting-edge design to bring your wardrobe to life.">
+    <meta property="og:site_name" content="Reveal Rainbow Co.">
+    <script src="scripts/index.js"></script>
+    <script src="scripts/product.js" defer></script>
+</head>
+<body>
+    <header>
+       
+        <div class="site-identity">
+            <img src="rainbowcat.ico" alt="Site Favicon" class="Reveal Rainbow">
+            <div class="site-info">
+                <h1>Reveal Rainbow Co.</h1>
+                <p class="tagline">Unveiling the Hidden Colors of Your Style</p>    
+            </div>
+        </div>
+        <nav class="menunav">
+            <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <ul class="menu-links">
+                <li><a href="index.html" target="_self">Home</a></li>
+                <li><a href="" target="_self">Products</a></li>
+                <li><a href="j" target="_self">Contact</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="views">
+            <button id="gridview"><img src="images/gridview.svg" alt="gridview"><br>Grid</button>
+            <button id="listview"><img src="images/listview.svg" alt="listview"><br>List</button>    
+        </div>
+        <div class="buttons">
+            <button id="all-btn">All</button>
+            <button id="kids-btn">Kids</button>
+            <button id="teens-btn">Teens</button>
+            <button id="adults-btn">Adults</button>
+        </div>
+        <div id ="product-directory"></div>
+    </main>
+    <footer>
+        <div id="logo">
+            <img src="rainbowcat.ico" alt="reveal rainbow">
+        </div>
+        <div>
+            <p>Reveal Rainbow Co.<br>Lane 123, Section 1, Henan Rd<br>Xitun District, Taichung City, Taiwan 407<br>(+866) 87-555-2300</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://youtube.com" target="_blank"><img src="images/yt.svg" alt="youtube"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="images/in.svg" alt="linkedin"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twit.svg" alt="twitter"></a>
+        </div>
+        <div class="copyright">
+            <p>&copy;<span id="currentyear">©2024 by</span> Rhea June Reyes</p>
+            <p id="datetimemodified"></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,92 @@
+.buttons {
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5px;
+}
+#all-btn, #kids-btn, #teens-btn, #adults-btn{
+    background: linear-gradient(to left, #ef5350, #f48fb1, #26c6da,#43a047, #eeff41, #f9a825, #ff5722);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+    border: 1px solid #2d5272;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#product-directory {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.views{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+#gridview, #listview {
+    background-color: var(--background-color);
+    border: 1px solid #2d5272;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#gridview:hover, #listview:hover {
+    border: 1px solid #2d5272;
+    background-color: #fff;
+}
+
+#gridview img, #listview img {
+    object-fit: contain;
+    width: 30px;
+    height:30px;
+}
+
+/* Grid view styling */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    width: 200px;
+}
+
+#product-directory {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* List view styling */
+.product-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    font-size: small;
+    padding: 10px;
+    width: 100%;
+    column-gap: 10px;
+}
+
+.product-list img {
+    max-width: 50px; 
+    height: auto; 
+    margin-right: 20px;
+    object-fit: contain;  
+}
+.product-list:nth-child(odd) {
+    background-color:var(--background-color); 
+}
+#product-directory.member-list-view {
+    display: block;
+}
