@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', async () => {
     const directory = document.getElementById('product-directory');
-    const gridViewBtn = document.getElementById('gridview');
-    const listViewBtn = document.getElementById('listview');
 
     const kidsBtn = document.getElementById('kids-btn');
     const teensBtn = document.getElementById('teens-btn');
@@ -30,18 +28,15 @@ document.addEventListener('DOMContentLoaded', async () => {
     const response = await fetch('data/products.json');
     const products = await response.json();
 
-    // my default grid view
-    let isGrid = true;
-
     // Render products
-    const renderProducts = (products, isGrid) => {
+    const renderProducts = (products) => {
         directory.innerHTML = products.map(product => {
             const images = Array.isArray(product.image)
                 ? product.image.map(img => `<img class="product-image" src="${img}" alt="${product.name}" />`).join('')
                 : `<img class="product-image" src="${product.image}" alt="${product.name}" />`;
 
             return `
-                <div class="${isGrid ? 'product-card' : 'product-list'}">
+                <div class="product-card">
                     <div class="product-images">
                         ${images}
                     </div>
@@ -67,7 +62,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const filteredProducts = category === "all"
             ? products
             : products.filter(product => product.category === category);
-        renderProducts(filteredProducts, isGrid);
+        renderProducts(filteredProducts);
     };
 
     // Initially render only "Kids" products
@@ -77,16 +72,4 @@ document.addEventListener('DOMContentLoaded', async () => {
     kidsBtn.addEventListener("click", () => filterProducts("1"));
     teensBtn.addEventListener("click", () => filterProducts("2"));
     adultsBtn.addEventListener("click", () => filterProducts("3"));
-
-    // Toggle to grid view
-    gridViewBtn.addEventListener('click', () => {
-        isGrid = true;
-        renderProducts(products, isGrid);
-    });
-
-    // Toggle to list view
-    listViewBtn.addEventListener('click', () => {
-        isGrid = false;
-        renderProducts(products, isGrid);
-    });
 });

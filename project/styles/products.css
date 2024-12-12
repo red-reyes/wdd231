@@ -37,35 +37,6 @@ main{
     padding: 20px;
 }
 
-.views{
-    display: flex;
-    flex-direction: row;
-    padding: 20px;
-    column-gap: 10px;
-    justify-content: center;
-}
-
-#gridview, #listview {
-    background-color: var(--background-color);
-    border: none;
-    border-radius: 8px;
-    padding: 10px;
-    cursor: pointer;
-}
-
-#gridview:hover, #listview:hover {
-    background-color: #f0dc00;
-    transition: transform 0.5s ease;
-    transform: scale(1.1); 
-    z-index: 10;
-}
-
-#gridview img, #listview img {
-    object-fit: contain;
-    width: 30px;
-    height:30px;
-}
-
 /* Grid view styling */
 .product-card {
     display: flex;
