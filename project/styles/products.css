@@ -177,21 +177,28 @@ main{
     align-items: center;
 }
 .updatesgrid img{
+    display: flex;
     width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
 .updatesgrid h3{
     color:#a3211f;
     font-weight: 800;
     font-size: 25pt;
     padding-top: 20px;
+    text-align: center;
 }
 .updatesgrid h4{
     font-weight: 800;
     font-size: 40pt;
+    text-align: center;
 }
 .updatesgrid p{
     font-size: 16pt;
     padding-bottom: 20px;
+    text-align: center;
 }
 .productgrid h2{
     font-size: 25pt;
