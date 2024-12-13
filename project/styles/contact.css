@@ -54,7 +54,7 @@ h2 {
 
 .branch-cards button,
 .form-section input[type="submit"] {
-    font-size: large;
+    font-size: medium;
     font-weight: 800;
     border: 1pt solid #640120;
     border-radius: 5px;
@@ -65,8 +65,8 @@ h2 {
 }
 
 .branch-cards button {
-    width: 25%;
-    margin: 0 auto;
+    width: 25%;    margin: 20px;
+
 }
 
 .branch-cards button:hover,
@@ -189,7 +189,7 @@ h2 {
 }
 
 .banner button {
-    margin: 20px;
+    margin: 50px;
     padding: 15px;
     background-color: #1B4789;
     border: none;
