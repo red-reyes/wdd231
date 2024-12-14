@@ -186,6 +186,11 @@ main{
     justify-content: center;
     align-items: center;
 }
+
+.updatesgrid img[src="images/rainbowsun.gif"] {
+    width: 50%;
+}
+
 .updatesgrid h3{
     color:#a3211f;
     font-weight: 800;
