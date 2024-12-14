@@ -189,17 +189,17 @@ main{
 .updatesgrid h3{
     color:#a3211f;
     font-weight: 800;
-    font-size: 25pt;
+    font-size:18pt;
     padding-top: 20px;
     text-align: center;
 }
 .updatesgrid h4{
     font-weight: 800;
-    font-size: 40pt;
+    font-size: xx-large;
     text-align: center;
 }
 .updatesgrid p{
-    font-size: 16pt;
+    font-size: 12pt;
     padding-bottom: 20px;
     text-align: center;
 }
